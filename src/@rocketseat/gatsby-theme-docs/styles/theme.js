@@ -6,7 +6,7 @@ export default {
         background: '#ffffff',
         link: '#999',
         heading: '#aaa',
-        linkActive: '#01579B',
+        linkActive: '#13131A',
         itemActive: '#E1F5FE',
         footer: '#A8A8B3',
       },

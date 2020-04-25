@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import logo from '../../../assets/logo.svg';
+import logo from '../../../../static/logo.svg';
 
 export default styled.div`
   width: 160px;

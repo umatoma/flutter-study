@@ -1,9 +1,48 @@
 # Sidebar navigation
 
-- label: 'Introduction'
+- label: 'トップ'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
+- label: 'Flutterとは'
+  items:
+    - label: 'Flutter概要'
+      link: '/introduction/about-flutter'
+    - label: 'Flutterの仕組み'
+- label: 'Flutterを使ってみる'
+  items:
+    - label: 'インストール'
+    - label: 'エディタ設定'
+    - label: 'アプリ起動'
+- label: 'Widgetを使ってみる'
+  items:
+    - label: 'テキストを表示する'
+    - label: 'ボタンを表示する'
+    - label: 'AppBarを表示する'
+    - label: '背景色を変える'
+    - label: '縦・横に並べる'
+- label: 'Todoアプリを作ってみよう'
+  items:
+    - label: '画面を切り替える'
+    - label: 'Todoリストを入力する'
+    - label: 'Todoリストを保持する'
+    - label: 'Todoリストを表示する'
+- label: 'Firebaseとの連携'
+  items:
+    - label: 'Firebase概要'
+    - label: 'Authenticationでログイン'
+    - label: 'Firestoreでデータ保存'
+- label: '少し複雑なアプリ作成'
+  items:
+    - label: 'Google認証でログイン'
+    - label: 'Firestoreと連携'
+    - label: 'Providerで状態管理'
+- label: '自分だけのWebアプリ公開'
+  items:
+    - label: 'Hosting概要'
+    - label: 'Webアプリ公開'
+- label: 'その他'
+  items:
+    - label: 'ご利用にあたって'
+      link: '/about'
 - label: Usage
   items:
     - label: 'Creating docs'
