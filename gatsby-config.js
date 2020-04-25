@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `@rocketseat/gatsby-theme-docs`,
-    defaultTitle: `@rocketseat/gatsby-theme-docs`,
-    siteTitleShort: `gatsby-theme-docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
+    siteTitle: `Flutterで始めるアプリ開発`,
+    defaultTitle: `Flutterで始めるアプリ開発`,
+    siteTitleShort: `Flutterで始めるアプリ開発`,
+    siteDescription: `Flutterを使ったiOS/Android/Webアプリ開発への入門に必要な情報を分かりやすく紹介`,
+    siteUrl: `https://flutter-study.dev`,
+    siteAuthor: `@umatoma`,
     siteImage: `/banner.png`,
-    siteLanguage: `en`,
-    themeColor: `#7159c1`,
+    siteLanguage: `ja`,
+    themeColor: `#1389FD`,
     basePath: `/`,
-    footer: `Theme by Rocketseat`,
+    footer: ``,
   },
   plugins: [
     {
@@ -18,15 +18,15 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
+        // githubUrl: `https://github.com/rocketseat/gatsby-themes`,
+        // baseDir: `examples/gatsby-theme-docs`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `Flutterで始めるアプリ開発`,
+        short_name: `Flutterで始めるアプリ開発`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.com`,
+        siteUrl: `https://flutter-study.dev`,
       },
     },
     `gatsby-plugin-offline`,
