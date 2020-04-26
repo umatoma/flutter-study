@@ -9,6 +9,7 @@
 - label: 'Flutterを使ってみる'
   items:
     - label: 'インストール'
+      link: 'getting-started/install'
     - label: 'エディタ設定'
     - label: 'アプリ起動'
 - label: 'Widgetを使ってみる'
