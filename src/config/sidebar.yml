@@ -6,7 +6,6 @@
   items:
     - label: 'Flutter概要'
       link: '/introduction/about-flutter'
-    - label: 'Flutterの仕組み'
 - label: 'Flutterを使ってみる'
   items:
     - label: 'インストール'
@@ -15,11 +14,13 @@
 - label: 'Widgetを使ってみる'
   items:
     - label: 'テキストを表示する'
-    - label: 'ボタンを表示する'
-    - label: 'AppBarを表示する'
     - label: '背景色を変える'
     - label: '縦・横に並べる'
-- label: 'Todoアプリを作ってみよう'
+    - label: '余白を付ける'
+    - label: 'ボタンを表示する'
+    - label: 'リストを表示する'
+    - label: 'AppBarを表示する'
+- label: 'Todoアプリを作ってみる'
   items:
     - label: '画面を切り替える'
     - label: 'Todoリストを入力する'
