@@ -9,23 +9,25 @@ description: 'Flutterのインストール方法を紹介'
 
 ## インストールの流れ
 
-注意事項
+早速インストールを進めていきましょう 🔧🔧🔧
 
-- 本サイトでは基本的に**Macを使用することを前提**としています。
-
-ステップ
+### ステップ
 
 1. Flutterをインストール
 1. iOS開発環境を設定
 1. Android開発環境を設定
 1. Web開発環境を設定
 
+### 注意事項
+
+- 本サイトでは基本的に**Macを使用することを前提**としています。
+
 
 ## 1. Flutterをインストール
 
 ### Flutterをダウンロードしホームディレクトリに保存
 
-- 👉 [Download Flutter](https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_1.17.0-3.2.pre-beta.zip)
+👉 [flutter_macos_1.17.0-3.2.pre-beta.zip](https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_1.17.0-3.2.pre-beta.zip)
 
 ### ダウンロードしたファイルを解凍
 
@@ -33,15 +35,16 @@ description: 'Flutterのインストール方法を紹介'
 
 ### Flutterにパスを通す
 
-- ログインシェルの設定ファイルにパスの情報を追記
-    - 使っているシェルを確認する  👉 `echo $SHELL`
-        - `bash`を使っている場合 👉 `~/.bash_profile`
-        - `zsh`を使っている場合 👉 `~/.zprofile`
+ログインシェルの設定ファイルにパスの情報を追記
 
 ```text
 // .bash_profile または .zprofile に追記
 export PATH="$PATH:$HOME/flutter/bin"
 ```
+
+※ 使っているシェルを確認する  👉 `echo $SHELL`
+- `bash`を使っている場合 👉 `~/.bash_profile`
+- `zsh`を使っている場合 👉 `~/.zprofile`
 
 ### Flutterにパスが通っているか確認
 
@@ -73,7 +76,7 @@ $ flutter --version
 
 ### Xcodeをインストール
 
-- 👉 https://apps.apple.com/us/app/xcode/id497799835
+👉 https://apps.apple.com/us/app/xcode/id497799835
 
 ### コマンドラインツールを設定
 
@@ -105,7 +108,7 @@ $ flutter doctor
 
 ### Android Studioをインストール
 
-- 👉 https://developer.android.com/studio
+👉 https://developer.android.com/studio
 
 ### エミュレータを作成
 
@@ -149,7 +152,7 @@ $ flutter config --enable-web
 
 ### Chromeをインストール
 
-- 👉 https://www.google.com/chrome/
+👉 https://www.google.com/chrome/
 
 ### 正しく設定できてるか確認
 
@@ -165,9 +168,11 @@ $ flutter doctor
 
 
 ## まとめ
+
 - Flutterをダウンロードしパスを通すことでインストール完了 👍
 - iOS/Android/Webの設定状況は `flutter doctor` で確認 👍
 
 
 ## 参考情報
+
 - https://flutter.dev/docs/get-started/install/macos
