@@ -13,8 +13,10 @@
     - label: 'エディタ設定'
       link: '/getting-started/editor'
     - label: 'アプリ起動'
+      link: '/getting-started/run-app'
 - label: 'Widgetを使ってみる'
   items:
+    - label: 'Widgetとは'
     - label: 'テキストを表示する'
     - label: '背景色を変える'
     - label: '縦・横に並べる'
