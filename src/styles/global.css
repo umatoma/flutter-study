@@ -1,3 +1,9 @@
 h2 {
     color: #0091EA !important;
 }
+
+pre[class~='language-dart']::before {
+    content: 'dart';
+    background: #0091EA !important;
+    color: #fff !important;
+}

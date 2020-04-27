@@ -17,6 +17,7 @@
 - label: 'Widgetを使ってみる'
   items:
     - label: 'Widgetとは'
+      link: '/widgets/about-widget'
     - label: 'テキストを表示する'
     - label: '背景色を変える'
     - label: '縦・横に並べる'
