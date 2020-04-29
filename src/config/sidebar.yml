@@ -32,10 +32,10 @@
       link: '/widgets/app-bar'
 - label: 'Todoアプリを作ってみる'
   items:
-    - label: '画面を切り替える'
-    - label: 'Todoリストを入力'
-    - label: 'Todoリストを保持'
-    - label: 'Todoリストを表示'
+    - label: 'Todoアプリ概要'
+      link: 'todo-app/about-todo-app'
+    - label: 'Todoリスト一覧画面'
+    - label: 'Todoリスト追加画面'
 - label: 'Firebaseとの連携'
   items:
     - label: 'Firebase概要'
