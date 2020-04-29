@@ -29,6 +29,7 @@
     - label: 'リストを表示'
       link: '/widgets/list-view-widget'
     - label: 'AppBarを表示'
+      link: '/widgets/app-bar'
 - label: 'Todoアプリを作ってみる'
   items:
     - label: '画面を切り替える'
