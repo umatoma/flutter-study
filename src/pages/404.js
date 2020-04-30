@@ -8,11 +8,9 @@ export default function NotFound() {
   return (
     <Layout title="Page not found!">
       <SEO title="404: Not found" />
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      <p>
-        If you&#39;d like to go back to homepage, <Link to="/">click here</Link>
-        .
-      </p>
+      <p>ページがありません...</p>
+      <p>まだまだ、作成中のページもありますので、もう少しお待ち下さい 🙇‍♂️🙇‍♂️🙇‍♂️</p>
+      <p>トップ画面は<Link to="/">こちら</Link></p>
     </Layout>
   );
 }
