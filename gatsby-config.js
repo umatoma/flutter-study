@@ -4,13 +4,13 @@ module.exports = {
     defaultTitle: `Flutterで始めるアプリ開発`,
     siteTitleShort: `flutter-study.dev`,
     siteDescription: `Flutterを使ったiOS/Android/Webアプリ開発への入門に必要な情報を分かりやすく紹介`,
-    siteUrl: `https://flutter-study.dev`,
-    siteAuthor: `@flutter-study`,
+    siteUrl: `https://www.flutter-study.dev`,
+    siteAuthor: `@flutter_study`,
     siteImage: `/banner.png`,
     siteLanguage: `ja`,
     themeColor: `#1389FD`,
     basePath: `/`,
-    footer: `flutter-study.dev`,
+    footer: `www.flutter-study.dev`,
   },
   plugins: [
     {
@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Flutterで始めるアプリ開発`,
-        short_name: `flutter-study.dev`,
+        short_name: `www.flutter-study.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: '#0091EA',
@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://flutter-study.dev`,
+        siteUrl: `https://www.flutter-study.dev`,
       },
     },
     `gatsby-plugin-offline`,
