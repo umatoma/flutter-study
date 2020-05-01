@@ -59,11 +59,3 @@
   items:
     - label: 'ご利用にあたって'
       link: '/about'
-- label: Usage
-  items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'

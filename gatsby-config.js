@@ -2,15 +2,15 @@ module.exports = {
   siteMetadata: {
     siteTitle: `Flutterで始めるアプリ開発`,
     defaultTitle: `Flutterで始めるアプリ開発`,
-    siteTitleShort: `Flutterで始めるアプリ開発`,
+    siteTitleShort: `flutter-study.dev`,
     siteDescription: `Flutterを使ったiOS/Android/Webアプリ開発への入門に必要な情報を分かりやすく紹介`,
     siteUrl: `https://flutter-study.dev`,
-    siteAuthor: `@flutter-study.dev`,
+    siteAuthor: `@flutter-study`,
     siteImage: `/banner.png`,
     siteLanguage: `ja`,
     themeColor: `#1389FD`,
     basePath: `/`,
-    footer: ``,
+    footer: `flutter-study.dev`,
   },
   plugins: [
     {
@@ -26,9 +26,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Flutterで始めるアプリ開発`,
-        short_name: `Flutterで始めるアプリ開発`,
+        short_name: `flutter-study.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
+        theme_color: '#0091EA',
         display: `standalone`,
         icon: `static/favicon.png`,
       },
@@ -37,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // trackingId: ``,
+        trackingId: `UA-48349484-4`,
       },
     },
     {

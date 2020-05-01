@@ -9,7 +9,7 @@ export default function NotFound() {
     <Layout title="Page not found!">
       <SEO title="404: Not found" />
       <p>ページがありません...</p>
-      <p>まだまだ、作成中のページもありますので、もう少しお待ち下さい 🙇‍♂️🙇‍♂️🙇‍♂️</p>
+      <p>まだまだ、作成中のページもありますので、もう少しお待ち下さい</p>
       <p>トップ画面は<Link to="/">こちら</Link></p>
     </Layout>
   );
