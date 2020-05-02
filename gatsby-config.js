@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: `Flutterで始めるアプリ開発`,
     defaultTitle: `Flutterで始めるアプリ開発`,
-    siteTitleShort: `flutter-study.dev`,
+    siteTitleShort: `Flutterで始めるアプリ開発`,
     siteDescription: `Flutterを使ったiOS/Android/Webアプリ開発への入門に必要な情報を分かりやすく紹介`,
     siteUrl: `https://www.flutter-study.dev`,
     siteAuthor: `@flutter_study`,
