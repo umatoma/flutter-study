@@ -11,3 +11,22 @@ pre[class~='language-dart']::before {
     background: #0091EA !important;
     color: #fff !important;
 }
+
+#gatsby-focus-wrapper {
+    overflow: hidden;
+}
+
+#layout-footer {
+    /* background-color: #303c42; */
+    padding: 32px;
+    text-align: center;
+}
+
+#layout-footer p {
+    color: #ddd;
+}
+
+#layout-footer a {
+    color: #999;
+    text-decoration: none;
+}
