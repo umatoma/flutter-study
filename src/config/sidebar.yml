@@ -2,11 +2,11 @@
 
 - label: 'トップ'
   link: '/'
-- label: 'Flutterとは'
+- label: '1.Flutterとは'
   items:
     - label: 'Flutter概要'
       link: '/introduction/about-flutter'
-- label: 'Flutterを使ってみる'
+- label: '2.Flutterを使ってみる'
   items:
     - label: 'インストール'
       link: '/getting-started/install'
@@ -14,7 +14,7 @@
       link: '/getting-started/editor'
     - label: 'アプリ起動'
       link: '/getting-started/run-app'
-- label: 'Widgetを使ってみる'
+- label: '3.Widgetを使ってみる'
   items:
     - label: 'Widgetとは'
       link: '/widgets/about-widget'
@@ -32,7 +32,7 @@
       link: '/widgets/app-bar-widget'
     - label: '状態を持ったWidget'
       link: '/widgets/state-widget'
-- label: 'Todoアプリを作ってみる'
+- label: '4.Todoアプリを作ってみる'
   items:
     - label: 'Todoアプリ概要'
       link: '/todo-app/about-todo-app'
@@ -40,7 +40,7 @@
       link: '/todo-app/list-page'
     - label: 'Todoリスト追加画面'
       link: '/todo-app/add-page'
-- label: 'Firebaseとの連携'
+- label: '5.Firebaseとは'
   items:
     - label: 'Firebase概要'
       link: '/firebase/about-firebase'
@@ -50,12 +50,12 @@
       link: '/firebase/cloud-firestore'
     - label: 'Firestoreを使ってみる'
       link: '/firebase/cloud-firestore-try'
-- label: '少し複雑なアプリ作成'
+- label: '6.Firebaseを使ったアプリ'
   items:
-    - label: 'Google認証でログイン'
-    - label: 'Firestoreと連携'
+    - label: 'Authenticationでログイン'
+    - label: 'Firestoreでデータ保存・同期'
     - label: 'Providerで状態管理'
-- label: '自分だけのWebアプリ公開'
+- label: '6.自分だけのWebアプリ公開'
   items:
     - label: 'Hosting概要'
     - label: 'Webアプリ公開'
