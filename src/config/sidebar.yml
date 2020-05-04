@@ -44,10 +44,12 @@
   items:
     - label: 'Firebase概要'
       link: '/firebase/about-firebase'
-    - label: 'Authenticationでログイン'
+    - label: 'Authentication概要'
       link: '/firebase/authentication'
-    - label: 'Firestoreでデータ保存'
+    - label: 'Firestore概要'
       link: '/firebase/cloud-firestore'
+    - label: 'Firestoreを使ってみる'
+      link: '/firebase/cloud-firestore-try'
 - label: '少し複雑なアプリ作成'
   items:
     - label: 'Google認証でログイン'
