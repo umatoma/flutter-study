@@ -17,13 +17,14 @@ pre[class~='language-dart']::before {
 }
 
 #layout-footer {
-    /* background-color: #303c42; */
     padding: 32px;
+    border-top: solid 1px #ddd;
     text-align: center;
 }
 
-#layout-footer p {
+#layout-footer .site-title {
     color: #ddd;
+    padding-top: 32px;
 }
 
 #layout-footer a {
