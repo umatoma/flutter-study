@@ -20,6 +20,12 @@ pre[class~='language-dart']::before {
     padding: 32px;
     border-top: solid 1px #ddd;
     text-align: center;
+    width: 75%;
+}
+@media (max-width: 1200px) {
+    #layout-footer {
+        width: 100%;
+    }
 }
 
 #layout-footer .site-title {
