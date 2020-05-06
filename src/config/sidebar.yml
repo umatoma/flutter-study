@@ -55,8 +55,10 @@
     - label: 'アプリ概要'
       link: '/firebase-app/about-firebase-app'
     - label: 'Authenticationでログイン'
+      link: '/firebase-app/authentication'
+    - label: 'Firestoreでデータ保存'
+    - label: 'Firestoreでデータ同期'
     - label: 'Providerで状態管理'
-    - label: 'Firestoreでデータ保存・同期'
 - label: '7.自分だけのWebアプリ公開'
   items:
     - label: 'Hosting概要'
