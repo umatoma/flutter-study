@@ -1,15 +1,32 @@
-h2 {
+header h2 {
     color: #0091EA !important;
 }
 
-h3 {
+main h2 {
+    color: #0091EA !important;
+    padding: 0.2em 0.5em !important;
+    border-left: 8px solid #0091EA !important;
+    margin-top: 48px !important;
+}
+
+main h3 {
     color: #0277BD !important;
+    margin-top: 32px !important;
+}
+
+main section h3 {
+    color: #0277BD !important;
+    margin-top: 0 !important;
 }
 
 pre[class~='language-dart']::before {
     content: 'dart';
     background: #0091EA !important;
     color: #fff !important;
+}
+
+pre.prism-code {
+    max-height: 500px;
 }
 
 #gatsby-focus-wrapper {
