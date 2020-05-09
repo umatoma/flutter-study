@@ -54,3 +54,20 @@ pre.prism-code {
     color: #999;
     text-decoration: none;
 }
+
+a.btn-start {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #0091EA;
+    color: #fff;
+    padding: 8px 32px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+}
+a.btn-start:hover {
+    background-color: #80D8FF;
+    color: #fff !important;
+}
