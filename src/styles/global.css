@@ -55,7 +55,7 @@ pre.prism-code {
     text-decoration: none;
 }
 
-a.btn-start {
+a.btn-start, a.btn-link {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -67,7 +67,7 @@ a.btn-start {
     -webkit-transition: background-color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out;
 }
-a.btn-start:hover {
+a.btn-start:hover, a.btn-link:hover {
     background-color: #80D8FF;
     color: #fff !important;
 }

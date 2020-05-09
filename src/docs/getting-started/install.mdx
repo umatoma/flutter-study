@@ -5,29 +5,35 @@ description: 'Flutterのインストール方法を紹介'
 
 ## このページのゴール
 - Flutterをインストールする
-- iOS/Android/Webの開発環境を設定する
+- Web開発環境を設定する
+- iOS開発環境を設定する（任意）
+- Android開発環境を設定する（任意）
 
-## インストールの流れ
+## インストール・環境設定の流れ
 
-早速インストールを進めていきましょう 🔧🔧🔧
+それでは、Flutterを使うための準備を進めていきましょう 🔧🔧🔧
 
 ### ステップ
 
 1. Flutterをインストール
-1. iOS開発環境を設定
-1. Android開発環境を設定
 1. Web開発環境を設定
-
-### 注意事項
-
-- 本サイトでは基本的に**Macを使用することを前提**としています。
+1. iOS開発環境を設定（任意）
+1. Android開発環境を設定（任意）
 
 
 ## 1. Flutterをインストール
 
+### ❗️注意事項❗️
+
+- 本サイトでは基本的に**Macを使用することを前提**としています。
+
 ### Flutterをダウンロードしホームディレクトリに保存
 
-👉 [flutter_macos_1.17.0-3.2.pre-beta.zip](https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_1.17.0-3.2.pre-beta.zip)
+<a
+    className="btn-link"
+    href="https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_1.17.0-3.2.pre-beta.zip">
+    flutter_macos_1.17.0-3.2.pre-beta.zip
+</a>
 
 ### ダウンロードしたファイルを解凍
 
@@ -38,13 +44,22 @@ description: 'Flutterのインストール方法を紹介'
 ログインシェルの設定ファイルにパスの情報を追記
 
 ```text
-// .bash_profile または .zprofile に追記
+// bash を使っている場合
+// .bash_profile に以下を追記
+export PATH="$PATH:$HOME/flutter/bin"
+
+// zsh を使っている場合
+// .zprofile に以下を追記
 export PATH="$PATH:$HOME/flutter/bin"
 ```
 
-※ 使っているシェルを確認する  👉 `echo $SHELL`
-- `bash`を使っている場合 👉 `~/.bash_profile`
-- `zsh`を使っている場合 👉 `~/.zprofile`
+※ 使っているシェルを確認する方法
+
+```bash
+$ echo $SHELL
+/bin/zsh
+```
+
 
 ### Flutterにパスが通っているか確認
 
@@ -58,25 +73,49 @@ Engine • revision 4c8c31f591
 Tools • Dart 2.8.0 (build 2.8.0-dev.20.10)
 ```
 
-### ※ コマンドラインからやりたい方はこちら
+
+## 2. Web開発環境を設定
+
+### Webを有効化
 
 ```bash
-$ cd ~
-$ curl -O https://storage.googleapis.com/flutter_infra/releases/beta/macos/flutter_macos_1.17.0-3.2.pre-beta.zip
-$ unzip ./flutter_macos_1.17.0-3.2.pre-beta.zip
-// bashを使っている場合
-$ echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bash_profile
-// zshを使っている場合
-$ echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.zprofile
-$ flutter --version
+$ flutter config --enable-web
+```
+
+### Chromeをインストール
+
+<a
+    className="btn-link"
+    href="https://www.google.com/chrome/">
+    https://www.google.com/chrome/
+</a>
+
+### 正しく設定できてるか確認
+
+`flutter doctor`で設定状況が確認できます。  
+Chromeのところに ✅ が入っていればOK 👍
+
+```bash
+$ flutter doctor
+...
+[✓] Chrome - develop for the web
+...
 ```
 
 
-## 2. iOS開発環境を設定
+## 3. iOS開発環境を設定（任意）
+
+### ❗️注意事項❗️
+設定が簡単なWebアプリで動作確認を行っていくため、  
+スキップしてもOKです 👍
 
 ### Xcodeをインストール
 
-👉 https://apps.apple.com/us/app/xcode/id497799835
+<a
+    className="btn-link"
+    href="https://apps.apple.com/us/app/xcode/id497799835">
+    https://apps.apple.com/us/app/xcode/id497799835
+</a>
 
 ### コマンドラインツールを設定
 
@@ -104,24 +143,55 @@ $ flutter doctor
 ```
 
 
-## 3. Android開発環境を設定
+## 4. Android開発環境を設定（任意）
+
+### ❗️注意事項❗️
+設定が簡単なWebアプリで動作確認を行っていくため、  
+スキップしてもOKです 👍
 
 ### Android Studioをインストール
 
-👉 https://developer.android.com/studio
+<a
+    className="btn-link"
+    href="https://developer.android.com/studio">
+    https://developer.android.com/studio
+</a>
 
 ### エミュレータを作成
 
-Android Studio を起動し `Configure >> AVD Manager` からエミュレータを作成
-
-<details><summary>手順詳細</summary>
-    <img src="../images/android-emulator-install-1.png" />
-    <img src="../images/android-emulator-install-2.png" />
-    <img src="../images/android-emulator-install-3.png" />
-    <img src="../images/android-emulator-install-4.png" />
-    <img src="../images/android-emulator-install-5.png" />
-    <img src="../images/android-emulator-install-6.png" />
-</details>
+<table>
+    <tbody>
+        <tr>
+            <td>Android Studio を起動し<br/>「Configure → AVD Manager」を選択</td>
+            <td width="50%"><img src="../images/android-emulator-install-1.png" /></td>
+        </tr>
+        <tr>
+            <td>「Create Virtual Device」を選択</td>
+            <td width="50%"><img src="../images/android-emulator-install-2.png" /></td>
+        </tr>
+        <tr>
+            <td>作成したいデバイスを選択し「Next」</td>
+            <td width="50%"><img src="../images/android-emulator-install-3.png" /></td>
+        </tr>
+        <tr>
+            <td>
+                作成したいOSを選択し「Next」<br/>
+                <br/>
+                OSがインストールされていない場合は、<br/>
+                「Download」からインストールできます。
+            </td>
+            <td width="50%"><img src="../images/android-emulator-install-4.png" /></td>
+        </tr>
+        <tr>
+            <td>デバイス名を入力し「Finish」</td>
+            <td width="50%"><img src="../images/android-emulator-install-5.png" /></td>
+        </tr>
+        <tr>
+            <td>デバイス一覧に表示されていればOKです 👍</td>
+            <td width="50%"><img src="../images/android-emulator-install-6.png" /></td>
+        </tr>
+    </tbody>
+</table>
 
 ### エミュレータを起動
 
@@ -142,35 +212,10 @@ $ flutter doctor
 ```
 
 
-## 4. Web開発環境を設定
-
-### Webを有効化
-
-```bash
-$ flutter config --enable-web
-```
-
-### Chromeをインストール
-
-👉 https://www.google.com/chrome/
-
-### 正しく設定できてるか確認
-
-`flutter doctor`で設定状況が確認できます。  
-Chromeのところに ✅ が入っていればOK 👍
-
-```bash
-$ flutter doctor
-...
-[✓] Chrome - develop for the web
-...
-```
-
-
 ## まとめ
 
-- Flutterをダウンロードしパスを通すことでインストール完了 👍
-- iOS/Android/Webの設定状況は `flutter doctor` で確認 👍
+- Flutterをダウンロードしパスを通すことでインストール完了
+- iOS/Android/Webの設定状況は `flutter doctor` で確認
 
 環境設定お疲れさまでした。  
 次はエディタの設定です、アプリを起動するまでもう少しなので頑張りましょう 💪
