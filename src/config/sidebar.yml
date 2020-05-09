@@ -62,10 +62,11 @@
       link: '/firebase-app/firestore-stream'
     - label: 'Providerで状態管理'
       link: '/firebase-app/provider'
-- label: '7.自分だけのWebアプリ公開'
+- label: '7.Webアプリ公開'
   items:
     - label: 'Hosting概要'
-    - label: 'Webアプリ公開'
+      link: '/host-web-app/hosting'
+    - label: 'HostingでWebアプリ公開'
 - label: 'その他'
   items:
     - label: 'ご利用にあたって'
