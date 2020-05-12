@@ -74,7 +74,7 @@ export default function Sidebar({ isMenuOpen }) {
                             });
 
                             return (
-                                <Location>
+                                <Location key={id}>
                                     {({ location }) => {
                                         const isOpen = items.some(item => {
                                             return item.link.replace(/\/$/, '') === location.pathname.replace(/\/$/, '');
@@ -82,7 +82,7 @@ export default function Sidebar({ isMenuOpen }) {
 
                                         return (
                                             <>
-                                                <ListWithSubItems key={id} text={label} isOpenDefault={isOpen} >
+                                                <ListWithSubItems text={label} isOpenDefault={isOpen} >
                                                     {subitems}
                                                 </ListWithSubItems>
                                             </>

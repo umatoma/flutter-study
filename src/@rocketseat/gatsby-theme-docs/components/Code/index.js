@@ -1,25 +1,3 @@
-// import React from 'react';
-// import CodeHighlight from '@rocketseat/gatsby-theme-docs/src/components/Code';
-
-// export default function Code(props) {
-//     // if (props.className && props.className.includes('run-dartpad')) {
-//     //     return (
-//     //         <pre>
-//     //             <code className={`language-${props.className}`}>{props.children}</code>
-//     //         </pre>
-//     //     );
-//     // }
-
-//     return (
-//         <CodeHighlight {...props} />
-//     );
-// }
-
-// Code.propTypes = CodeHighlight.propTypes;
-
-
-
-
 import React, { useState } from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import PropTypes from 'prop-types';
