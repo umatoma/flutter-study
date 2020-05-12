@@ -68,6 +68,10 @@
       link: '/host-web-app/hosting'
     - label: 'HostingでWebアプリ公開'
       link: '/host-web-app/host-web-app'
+- label: 'Widget'
+  items:
+    - label: 'Scaffold'
+      link: /master-widgets/scaffold
 - label: 'その他'
   items:
     - label: 'ご利用にあたって'

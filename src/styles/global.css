@@ -61,7 +61,7 @@ a.btn-start, a.btn-link {
     font-size: 16px;
     background-color: #0091EA;
     color: #fff;
-    padding: 8px 32px;
+    padding: 8px 24px;
     white-space: nowrap;
     transition: background-color 0.2s ease-out;
     -webkit-transition: background-color 0.2s ease-out;
@@ -70,4 +70,8 @@ a.btn-start, a.btn-link {
 a.btn-start:hover, a.btn-link:hover {
     background-color: #80D8FF;
     color: #fff !important;
+}
+
+.dartpad-container iframe {
+    width: 100%;
 }
