@@ -68,7 +68,11 @@
       link: '/host-web-app/hosting'
     - label: 'HostingでWebアプリ公開'
       link: '/host-web-app/host-web-app'
-- label: 'Widget'
+- label: 'Flutter詳細'
+  items:
+    - label: 'Flutter on the web'
+      link: '/master-flutter/flutter-web'
+- label: 'Widgetの使い方'
   items:
     - label: 'Scaffold'
       link: /master-widgets/scaffold
