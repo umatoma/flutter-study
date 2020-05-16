@@ -68,6 +68,12 @@
       link: '/host-web-app/hosting'
     - label: 'HostingでWebアプリ公開'
       link: '/host-web-app/host-web-app'
+- label: '様々なUIを作ってみる'
+  items:
+    - label: '様々なUIを作ってみる'
+      link: '/create-ui/top'
+    - label: 'Sign In・Sign Up'
+      link: '/create-ui/sign-in-sign-up'
 - label: 'Flutter詳細'
   items:
     - label: 'Flutter on the web'

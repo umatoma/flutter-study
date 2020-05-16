@@ -75,3 +75,7 @@ a.btn-start:hover, a.btn-link:hover {
 .dartpad-container iframe {
     width: 100%;
 }
+
+.ui-list-table p {
+    text-align: center !important;
+}
