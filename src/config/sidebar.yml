@@ -72,8 +72,10 @@
   items:
     - label: '様々なUIを作ってみる'
       link: '/create-ui/top'
-    - label: 'Sign In・Sign Up'
+    - label: 'Sign In / Sign Up'
       link: '/create-ui/sign-in-sign-up'
+    - label: 'Battery Optimizer'
+      link: '/create-ui/battery-optimizer'
 - label: 'Flutter詳細'
   items:
     - label: 'Flutter on the web'
