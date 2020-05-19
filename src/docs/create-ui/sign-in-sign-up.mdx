@@ -116,6 +116,8 @@ UIを作成するための、大まかな方針としては以下の4つの要�
 
 ![](../images/create-ui/ui-create-sign-in-sign-up-clip-path.svg)
 
+https://www.youtube.com/watch?v=oAUebVIb-7s
+
 ```dart
 class _HeaderCurveClipper extends CustomClipper<Path> {
   @override
@@ -176,6 +178,8 @@ class _HeaderBackground extends StatelessWidget {
 丸を描く部分は、`CustomPaint` を使い2つの円を描きましょう。  
 細かい部分の描画であったり、複雑な描画が必要なものは `CustomPaint` を使うと便利ですね。
 
+https://www.youtube.com/watch?v=kp14Y4uHpHs
+
 ```dart
 class _HeaderCirclePainter extends CustomPainter {
   @override
@@ -229,6 +233,8 @@ class _HeaderCircles extends StatelessWidget {
 
 残りはタイトルと戻るボタンを作成し、`Stack` で各Widgetを重ねて表示しましょう。  
 この様に複数のWidgetを重ねて表現するようなUIでは `Stack` を使うと良いですね。
+
+https://www.youtube.com/watch?v=liEGSeD3Zt8
 
 ```dart
 class _HeaderTitle extends StatelessWidget {
