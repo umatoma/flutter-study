@@ -72,6 +72,8 @@
   items:
     - label: '様々なUIを作ってみる'
       link: '/create-ui/top'
+    - label: 'Admin Mobile'
+      link: '/create-ui/admin-mobile'
     - label: 'Sign In / Sign Up'
       link: '/create-ui/sign-in-sign-up'
     - label: 'Battery Optimizer'
