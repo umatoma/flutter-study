@@ -79,3 +79,11 @@ a.btn-start:hover, a.btn-link:hover {
 .ui-list-table p {
     text-align: center !important;
 }
+
+table.gsc-input {
+    margin-bottom: 0 !important;
+    line-height: normal !important;
+}
+.gsc-input .gsib_b {
+    padding: 0 !important;
+}

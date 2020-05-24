@@ -34,6 +34,10 @@ export default function Footer({ }) {
     return (
         <div id="layout-footer">
             <p>
+                <div>サイト内検索</div>
+                <div className="gcse-searchbox-only" />
+            </p>
+            <p>
                 <div>Flutter関連書籍</div>
                 <Flex>
                     <FlexInner>

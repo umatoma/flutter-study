@@ -5,6 +5,11 @@ import Prism from "prism-react-renderer/prism";
 require("prismjs/components/prism-dart");
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
+    dartPad();
+    googleCustomSearchEngine();
+};
+
+function dartPad() {
     // Dart-Padソースコード埋め込み処理
     const snippets = document.querySelectorAll('code');
     for (const snippet of snippets) {
@@ -25,4 +30,17 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
             snippet.parentNode.replaceChild(iframe, snippet);
         }
     }
-};
+}
+
+function googleCustomSearchEngine() {
+    const src = 'https://cse.google.com/cse.js?cx=011639872739789057932:mbhzs6ouq8o';
+
+    const oldScript = document.querySelector(`script[src="${src}"]`);
+    if (oldScript) {
+        oldScript.remove();
+    }
+
+    const script = document.createElement('script');
+    script.src = src;
+    document.body.appendChild(script);
+}
