@@ -80,6 +80,8 @@
       link: '/create-ui/battery-optimizer'
     - label: 'Flight Booking'
       link: '/create-ui/flight-booking'
+    - label: 'アニメーション基礎'
+      link: '/create-ui/animation'
 - label: 'Flutter詳細'
   items:
     - label: 'Flutter on the web'
