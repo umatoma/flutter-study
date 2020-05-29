@@ -76,8 +76,9 @@ a.btn-start:hover, a.btn-link:hover {
     width: 100%;
 }
 
-.ui-list-table p {
+.ui-list-table td {
     text-align: center !important;
+    vertical-align: top !important;
 }
 
 table.gsc-input {
