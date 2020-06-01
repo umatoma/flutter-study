@@ -68,9 +68,9 @@
       link: '/host-web-app/hosting'
     - label: 'HostingでWebアプリ公開'
       link: '/host-web-app/host-web-app'
-- label: '様々なUIを作ってみる'
+- label: 'UIを作ってみる'
   items:
-    - label: '様々なUIを作ってみる'
+    - label: 'UIを作ってみる'
       link: '/create-ui/top'
     - label: 'Admin Mobile'
       link: '/create-ui/admin-mobile'
@@ -84,6 +84,12 @@
       link: '/create-ui/animation'
     - label: 'Online Learning'
       link: '/create-ui/online-learning'
+- label: 'アプリを作ってみる'
+  items:
+    - label: 'アプリを作ってみる'
+      link: '/create-app/top'
+    - label: 'Qiita App'
+      link: '/create-app/qiita-app'
 - label: 'Flutter詳細'
   items:
     - label: 'Flutter on the web'
