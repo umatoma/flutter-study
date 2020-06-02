@@ -88,6 +88,8 @@
   items:
     - label: 'アプリを作ってみる'
       link: '/create-app/top'
+    - label: 'Androidアプリを公開する'
+      link: '/create-app/publish-android'
     - label: 'Qiita App'
       link: '/create-app/qiita-app'
 - label: 'Flutter詳細'
