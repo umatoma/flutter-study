@@ -1,5 +1,8 @@
 # Sidebar navigation
-
+- label: 'Twitter'
+  link: 'https://twitter.com/flutter_study'
+- label: 'MENTA'
+  link: 'https://menta.work/plan/1947'
 - label: 'トップ'
   link: '/'
 - label: '1.Flutterとは'

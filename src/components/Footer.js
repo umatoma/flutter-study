@@ -66,6 +66,10 @@ export default function Footer({ }) {
                 <div>Twitter</div>
                 <div><a href={twitterUrl} target="_blank">{siteAuthor}</a></div>
             </p>
+            <p>
+                <div>MENTA</div>
+                <div><a href="https://menta.work/plan/1947" target="_blank">学習サポート</a></div>
+            </p>
             <p className="site-title">
                 <div>{siteTitle}</div>
                 <div>© {siteAuthor.replace('@', '')}.</div>
