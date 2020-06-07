@@ -91,6 +91,8 @@
   items:
     - label: 'アプリを作ってみる'
       link: '/create-app/top'
+    - label: '音楽・動画を再生する'
+      link: '/create-app/media-player'
     - label: 'Androidアプリを公開する'
       link: '/create-app/publish-android'
     - label: 'Qiita App'
