@@ -95,6 +95,8 @@
       link: '/create-app/media-player'
     - label: 'Androidアプリを公開する'
       link: '/create-app/publish-android'
+    - label: 'Codemagicで自動化'
+      link: '/create-app/codemagic'
     - label: 'Qiita App'
       link: '/create-app/qiita-app'
 - label: 'Flutter詳細'
