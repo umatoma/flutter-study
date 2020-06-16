@@ -91,6 +91,8 @@
   items:
     - label: 'アプリを作ってみる'
       link: '/create-app/top'
+    - label: 'Providerで状態管理'
+      link: '/create-app/provider'
     - label: '音楽・動画を再生する'
       link: '/create-app/media-player'
     - label: 'Androidアプリを公開する'
