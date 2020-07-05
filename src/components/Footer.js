@@ -41,22 +41,22 @@ export default function Footer({ }) {
                 <div>Flutter関連書籍</div>
                 <Flex>
                     <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B082XQ81FH/ref=nosim?tag=tmk555-22" target="_blank">
+                        <a href="https://www.amazon.co.jp/dp/B082XQ81FH/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B082XQ81FH.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                     <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B07Z9DYYBY/ref=nosim?tag=tmk555-22" target="_blank">
+                        <a href="https://www.amazon.co.jp/dp/B07Z9DYYBY/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07Z9DYYBY.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                     <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B07Q19LVW2/ref=nosim?tag=tmk555-22" target="_blank">
+                        <a href="https://www.amazon.co.jp/dp/B07Q19LVW2/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07Q19LVW2.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                     <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B07LBPRHQD/ref=nosim?tag=tmk555-22" target="_blank">
+                        <a href="https://www.amazon.co.jp/dp/B07LBPRHQD/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07LBPRHQD.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
