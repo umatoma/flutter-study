@@ -67,6 +67,10 @@ export default function Footer({ }) {
                 <div><a href={twitterUrl} target="_blank">{siteAuthor}</a></div>
             </p>
             <p>
+                <div>BOOTH</div>
+                <div><a href="https://umatoma.booth.pm/items/2420736" target="_blank">作って学ぶ、FlutterとFirebaseを使ったアプリ開発</a></div>
+            </p>
+            <p>
                 <div>MENTA</div>
                 <div><a href="https://menta.work/plan/1947" target="_blank">学習サポート</a></div>
             </p>
