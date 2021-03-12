@@ -61,6 +61,32 @@ $ flutter create myapp
     </tbody>
 </table>
 
+web/index.html
+```html
+<!DOCTYPE html>
+// ...
+<body>
+  // ...
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "...",
+      authDomain: "...",
+      databaseURL: "...",
+      projectId: "...",
+      storageBucket: "...",
+      messagingSenderId: "...",
+      appId: "...",
+      measurementId: "..."
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
+```
+
 
 ## Firestoreを使った処理を実装してみる
 
@@ -95,7 +121,8 @@ dependencies:
   cupertino_icons: ^0.1.3
 
   # *** ここを追記 ***
-  cloud_firestore: ^0.13.5
+  firebase_core: ^1.0.1
+  cloud_firestore: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -121,7 +148,7 @@ $ flutter pub get
 
 解説
 
-- `setData()` でドキュメントを作成できる
+- `set()` でドキュメントを作成できる
 - コレクションが存在しない場合は自動的に作成される
 - 作成されたドキュメントはFirestoreの管理画面で確認できる
 
@@ -133,9 +160,12 @@ $ flutter pub get
 
 ```dart
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  // Fireabse初期化
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -166,14 +196,14 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               child: Text('コレクション＋ドキュメント作成'),
               onPressed: () async {
                 // ドキュメント作成
-                await Firestore.instance
+                await FirebaseFirestore.instance
                     .collection('users') // コレクションID
-                    .document('id_abc') // ドキュメントID
-                    .setData({'name': '鈴木', 'age': 40}); // データ
+                    .doc('id_abc') // ドキュメントID
+                    .set({'name': '鈴木', 'age': 40}); // データ
               },
             ),
           ],
@@ -211,17 +241,17 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton(
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton(
               child: Text('サブコレクション＋ドキュメント作成'),
               onPressed: () async {
                 // サブコレクション内にドキュメント作成
-                await Firestore.instance
+                await FirebaseFirestore.instance
                     .collection('users') // コレクションID
-                    .document('id_abc') // ドキュメントID << usersコレクション内のドキュメント
+                    .doc('id_abc') // ドキュメントID << usersコレクション内のドキュメント
                     .collection('orders') // サブコレクションID
-                    .document('id_123') // ドキュメントID << サブコレクション内のドキュメント
-                    .setData({'price': 600, 'date': '9/13'}); // データ
+                    .doc('id_123') // ドキュメントID << サブコレクション内のドキュメント
+                    .set({'price': 600, 'date': '9/13'}); // データ
               },
             ),
           ],
@@ -258,14 +288,14 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton(
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton(
               child: Text('ドキュメント一覧取得'),
               onPressed: () async {
                 // コレクション内のドキュメント一覧を取得
                 final snapshot =
-                    await Firestore.instance.collection('users').getDocuments();
+                    await FirebaseFirestore.instance.collection('users').get();
                 // 取得したドキュメント一覧をUIに反映
                 setState(() {
                   documentList = snapshot.documents;
@@ -317,19 +347,19 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
             Column( /* --- 省略 --- */ ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('ドキュメントを指定して取得'),
               onPressed: () async {
                 // コレクションIDとドキュメントIDを指定して取得
-                final document = await Firestore.instance
+                final document = await FirebaseFirestore.instance
                     .collection('users')
-                    .document('id_abc')
+                    .doc('id_abc')
                     .collection('orders')
-                    .document('id_123')
+                    .doc('id_123')
                     .get();
                 // 取得したドキュメントの情報をUIに反映
                 setState(() {
@@ -376,20 +406,20 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
             Column( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
             ListTile( /* --- 省略 --- */ ),
-            RaisedButton(
+            ElevatedButton(
               child: Text('ドキュメント更新'),
               onPressed: () async {
                 // ドキュメント更新
-                await Firestore.instance
+                await FirebaseFirestore.instance
                     .collection('users')
-                    .document('id_abc')
-                    .updateData({'age': 41});
+                    .doc('id_abc')
+                    .update({'age': 41});
               },
             ),
           ],
@@ -426,22 +456,22 @@ class _MyFirestorePageState extends State<MyFirestorePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
             Column( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
+            ElevatedButton( /* --- 省略 --- */ ),
             ListTile( /* --- 省略 --- */ ),
-            RaisedButton( /* --- 省略 --- */ ),
-            RaisedButton(
+            ElevatedButton( /* --- 省略 --- */ ),
+            ElevatedButton(
               child: Text('ドキュメント削除'),
               onPressed: () async {
                 // ドキュメント削除
-                await Firestore.instance
+                await FirebaseFirestore.instance
                     .collection('users')
-                    .document('id_abc')
+                    .doc('id_abc')
                     .collection('orders')
-                    .document('id_123')
+                    .doc('id_123')
                     .delete();
               },
             ),
