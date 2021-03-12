@@ -8,15 +8,15 @@ description: 'ボタンを表示するためのWidgetを紹介'
 - ボタンを表示するためのWidgetの扱いを知る
 
 
-## FlatButton・OutlineButton・RaisedButton
+## TextButton・OutlinedButton・ElevatedButton
 
 基本的なボタン表示用Widgetとしては以下の3種類があります。
 
-- FlatButton
+- TextButton
     - 影のないボタン
-- OutlineButton
+- OutlinedButton
     - 枠線のあるボタン
-- RaisedButton
+- ElevatedButton
     - 影のあるボタン
 
 ### ボタンを表示する
@@ -26,15 +26,15 @@ description: 'ボタンを表示するためのWidgetを紹介'
 `onPressed` にタップされた時の処理を指定すればOKです 👍
 
 ```dart
-FlatButton(
+TextButton(
   onPressed: () { /* ボタンがタップされた時の処理 */ },
   child: Text('click here'),
 )
-OutlineButton(
+OutlinedButton(
   onPressed: () { /* ボタンがタップされた時の処理 */ },
   child: Text('click here'),
 )
-RiasedButton(
+ElevatedButton(
   onPressed: () { /* ボタンがタップされた時の処理 */ },
   child: Text('click here'),
 )
@@ -46,60 +46,55 @@ RiasedButton(
 ボタンが押せるときと押せないときでデザインが自動的に切り替わったりします。
 
 ```dart
-FlatButton(
+TextButton(
   onPressed: () { /* ボタンが押せる時 */ },
   child: Text('押せるよ'),
 )
-OutlineButton(
+OutlinedButton(
   onPressed: null,
   child: Text('押せないよ'),
 )
 ```
 
-### 背景色を変える
+### テーマ色を変える
 
-`FlatButton` や `RaisedButton` の背景色を変えるときは `color` を指定すればOKです 👍  
-また、ボタンが押せない時の背景色は `disabledColor` を指定すればOKです 👍
-
-```dart
-FlatButton(
-  color: Colors.blue,
-  onPressed: () { /* ボタンが押せる時 */ },
-  child: Text('押せるよ'),
-)
-RaisedButton(
-  color: Colors.grey,
-  onPressed: null,
-  child: Text('押せないよ'),
-)
-```
-
-### 枠線の色を変える
-
-`OutlineButton` の枠線の色を変えるときは `borderSide` を指定すればOKです 👍  
-また、ボタンが押せない時の枠線の色は `disabledBorderColor` を指定すればOKです 👍
+各ボタンのテーマ色を変えるときは `style` を指定すればOKです 👍  
 
 ```dart
-OutlineButton(
-  borderSide: BorderSide(color: Colors.blue),
+TextButton(
   onPressed: () { /* ボタンが押せる時 */ },
+  style: TextButton.styleFrom(
+    primary: Colors.red,
+  ),
   child: Text('押せるよ'),
 )
-OutlineButton(
-  disabledBorderColor: Colors.red,
-  onPressed: null,
-  child: Text('押せないよ'),
+OutlinedButton(
+  onPressed: () { /* ボタンが押せる時 */ },
+  style: OutlinedButton.styleFrom(
+    primary: Colors.red,
+  ),
+  child: Text('押せるよ'),
+)
+ElevatedButton(
+  onPressed: () { /* ボタンが押せる時 */ },
+  style: ElevatedButton.styleFrom(
+    primary: Colors.red,
+  ),
+  child: Text('押せるよ'),
 )
 ```
 
 ### 影の深さを変える
 
-`RaisedButton` の影の深さを変えるときは `elevation` を指定すればOKです 👍
+`ElevatedButton` の影の深さを変えるときは `elevation` を指定すればOKです 👍
 
 ```dart
-RaisedButton(
-  borderSide: BorderSide(color: Colors.blue),
+ElevatedButton(
   onPressed: () { /* ボタンが押せる時 */ },
+  style: ElevatedButton.styleFrom(
+    primary: Colors.red,
+    elevation: 16,
+  ),
   child: Text('押せるよ'),
 )
 ```
@@ -112,14 +107,14 @@ RaisedButton(
 <iframe
     width="100%"
     height="500px"
-    src="https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true&id=8895e0cd80d94a5dad10d01a35193d71">
+    src="https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true&id=8895e0cd80d94a5dad10d01a35193d71">
 </iframe>
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/material/FlatButton-class.html
-- https://api.flutter.dev/flutter/material/OutlineButton-class.html
-- https://api.flutter.dev/flutter/material/RaisedButton-class.html
+- https://api.flutter.dev/flutter/material/TextButton-class.html
+- https://api.flutter.dev/flutter/material/OutlinedButton-class.html
+- https://api.flutter.dev/flutter/material/ElevatedButton-class.html
 
 
 ## IconButton
@@ -143,23 +138,23 @@ IconButton(
 ### テキスト＋アイコンボタンを表示する
 
 テキストとアイコンを含めたボタンを表示する時は、  
-`FlatButton.icon`・`OutlineButton.icon`・`RaisedButton.icon` を使えばOKです 👍
+`TextButton.icon`・`OutlinedButton.icon`・`ElevatedButton.icon` を使えばOKです 👍
 
-基本的な使い方は `FlatButton`・`OutlineButton`・`RaisedButton` と同じですが、  
+基本的な使い方は `TextButton`・`OutlinedButton`・`ElevatedButton` と同じですが、  
 `icon` でアイコンを指定し、`label` でテキストを指定する部分が異なってます 🤔
 
 ```dart
-FlatButton.icon(
+TextButton.icon(
   onPressed: () {},
   icon: Icon(Icons.thumb_up),
   label: Text('Good'),
 )
-OutlineButton.icon(
+OutlinedButton.icon(
   onPressed: () {},
   icon: Icon(Icons.favorite),
   label: Text('Like'),
 )
-RaisedButton.icon(
+ElevatedButton.icon(
   onPressed: () {},
   icon: Icon(Icons.flight),
   label: Text('Flight'),
@@ -174,7 +169,7 @@ RaisedButton.icon(
 <iframe
     width="100%"
     height="500px"
-    src="https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true&id=fa5998d385f170991028243f07fa0154">
+    src="https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true&id=fa5998d385f170991028243f07fa0154">
 </iframe>
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
@@ -209,7 +204,7 @@ Scaffold(
 <iframe
     width="100%"
     height="500px"
-    src="https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true&id=7231428026257bbbf2ff4db338833172">
+    src="https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true&id=7231428026257bbbf2ff4db338833172">
 </iframe>
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
@@ -219,9 +214,9 @@ Scaffold(
 
 ## まとめ
 
-- 基本的なボタンは `FlatButton`・`OutlineButton`・`RaisedButton` Widgetを使えばOK
+- 基本的なボタンは `TextButton`・`OutlinedButton`・`ElevatedButton` Widgetを使えばOK
 - アイコンボタンは `IconButton` Widgetを使えばOK
-- アイコン＋テキストボタンは `FlatButton.icon`・`OutlineButton.icon`・`RaisedButton.icon`  Widgetを使えばOK
+- アイコン＋テキストボタンは `TextButton.icon`・`OutlinedButton.icon`・`ElevatedButton.icon`  Widgetを使えばOK
 - `FloatingActionButton` を使う時は `Scaffold` と組み合わせればOK
 
 次は、リストを表示するためのWidgetを紹介していきます 💪💪💪
@@ -229,8 +224,8 @@ Scaffold(
 
 ## 参考情報
 
-- https://api.flutter.dev/flutter/material/FlatButton-class.html
-- https://api.flutter.dev/flutter/material/OutlineButton-class.html
-- https://api.flutter.dev/flutter/material/RaisedButton-class.html
+- https://api.flutter.dev/flutter/material/TextButton-class.html
+- https://api.flutter.dev/flutter/material/OutlinedButton-class.html
+- https://api.flutter.dev/flutter/material/ElevatedButton-class.html
 - https://api.flutter.dev/flutter/material/IconButton-class.html
 - https://api.flutter.dev/flutter/material/FloatingActionButton-class.html

@@ -87,14 +87,11 @@ class MyTodoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // 右上に表示される"debug"ラベルを消す
-      debugShowCheckedModeBanner: false,
       // アプリ名
       title: 'My Todo App',
       theme: ThemeData(
         // テーマカラー
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // リスト一覧画面を表示
       home: TodoListPage(),
@@ -168,7 +165,7 @@ class TodoAddPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: FlatButton(
+        child: TextButton(
           // ボタンをクリックした時の処理
           onPressed: () {
             // "pop"で前の画面に戻る
@@ -204,7 +201,7 @@ Flutterを使うと手軽にアプリが作れることが何となく実感で�
 <iframe
     width="100%"
     height="500px"
-    src="https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true&id=c8d4a0dec68b9b56fed8a03ea52a1a47">
+    src="https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true&id=c8d4a0dec68b9b56fed8a03ea52a1a47">
 </iframe>
 
 

@@ -64,21 +64,23 @@ class TodoAddPage extends StatelessWidget {
           children: <Widget>[
             // テキスト入力
             TextField(),
+            const SizedBox(height: 8),
             Container(
               // 横幅いっぱいに広げる
               width: double.infinity,
               // リスト追加ボタン
-              child: RaisedButton(
+              child: ElevatedButton(
                 color: Colors.blue,
                 onPressed: () {},
                 child: Text('リスト追加', style: TextStyle(color: Colors.white)),
               ),
             ),
+            const SizedBox(height: 8),
             Container(
               // 横幅いっぱいに広げる
               width: double.infinity,
               // キャンセルボタン
-              child: FlatButton(
+              child: TextButton(
                 // ボタンをクリックした時の処理
                 onPressed: () {
                   // "pop"で前の画面に戻る
@@ -142,6 +144,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
           children: <Widget>[
             // 入力されたテキストを表示
             Text(_text, style: TextStyle(color: Colors.blue)),
+            const SizedBox(height: 8),
             // テキスト入力
             TextField(
               // 入力されたテキストの値を受け取る（valueが入力されたテキスト）
@@ -153,7 +156,9 @@ class _TodoAddPageState extends State<TodoAddPage> {
                 });
               },
             ),
+            const SizedBox(height: 8),
             Container( /* --- 省略 --- */ ),
+            const SizedBox(height: 8),
             Container( /* --- 省略 --- */ ),
           ],
         ),
@@ -206,14 +211,15 @@ class _TodoAddPageState extends State<TodoAddPage> {
           children: <Widget>[
             // 入力されたテキストを表示
             Text(_text, style: TextStyle(color: Colors.blue)),
+            const SizedBox(height: 8),
             // テキスト入力
             TextField( /* --- 省略 --- */ ),
+            const SizedBox(height: 8),
             Container(
               // 横幅いっぱいに広げる
               width: double.infinity,
               // リスト追加ボタン
-              child: RaisedButton(
-                color: Colors.blue,
+              child: ElevatedButton(
                 onPressed: () {
                   // *** 追加する部分 ***
                   // "pop"で前の画面に戻る
@@ -223,6 +229,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
                 child: Text('リスト追加', style: TextStyle(color: Colors.white)),
               ),
             ),
+            const SizedBox(height: 8),
             Container( /* --- 省略 --- */ ),
           ],
         ),
@@ -376,7 +383,7 @@ class _TodoListPageState extends State<TodoListPage> {
 <iframe
     width="100%"
     height="500px"
-    src="https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true&id=91d796ea40c2e36c95ee5f34544fa307">
+    src="https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true&id=91d796ea40c2e36c95ee5f34544fa307">
 </iframe>
 
 
