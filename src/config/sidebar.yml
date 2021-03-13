@@ -1,6 +1,8 @@
 # Sidebar navigation
 - label: 'Twitter'
   link: 'https://twitter.com/flutter_study'
+- label: 'note'
+  link: 'https://note.com/_umatoma'
 - label: 'BOOTH'
   link: 'https://umatoma.booth.pm/items/2420736'
 - label: 'MENTA'
