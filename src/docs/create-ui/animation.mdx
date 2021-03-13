@@ -304,8 +304,8 @@ class MyWidget extends StatefulWidget {
 
 class _MyWidgetState extends State<MyWidget>
     with SingleTickerProviderStateMixin {
-  AnimationController? controller;
-  Animation<double>? animation;
+  late AnimationController controller;
+  late Animation<double> animation;
 
   @override
   void initState() {
@@ -319,12 +319,12 @@ class _MyWidgetState extends State<MyWidget>
     animation = Tween<double>(
       begin: 1.0, // アニメーション開始時のスケール
       end: 2.0, // アニメーション終了時のスケール
-    ).animate(controller!);
+    ).animate(controller);
   }
 
   @override
   void dispose() {
-    controller?.dispose();
+    controller.dispose();
 
     super.dispose();
   }
@@ -339,21 +339,21 @@ class _MyWidgetState extends State<MyWidget>
             IconButton(
               onPressed: () {
                 // アニメーション再生
-                controller?.forward();
+                controller.forward();
               },
               icon: Icon(Icons.play_arrow),
             ),
             IconButton(
               onPressed: () {
                 // アニメーション停止
-                controller?.stop();
+                controller.stop();
               },
               icon: Icon(Icons.stop),
             ),
             IconButton(
               onPressed: () {
                 // アニメーション繰り返し
-                controller?.repeat();
+                controller.repeat();
               },
               icon: Icon(Icons.loop),
             ),
@@ -362,7 +362,7 @@ class _MyWidgetState extends State<MyWidget>
       ),
       body: Center(
         child: ScaleTransition(
-          scale: animation!,
+          scale: animation,
           child: Container(
             width: 50,
             height: 50,
