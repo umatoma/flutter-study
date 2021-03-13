@@ -135,14 +135,11 @@ class ChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // 右上に表示される"debug"ラベルを消す
-      debugShowCheckedModeBanner: false,
       // アプリ名
       title: 'ChatApp',
       theme: ThemeData(
         // テーマカラー
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // ログイン画面を表示
       home: LoginPage(),
@@ -159,7 +156,7 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               child: Text('ログイン'),
               onPressed: () async {
                 // チャット画面に遷移＋ログイン画面を破棄
@@ -222,7 +219,7 @@ class AddPostPage extends StatelessWidget {
         title: Text('チャット投稿'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('戻る'),
           onPressed: () {
             // 1つ前の画面に戻る

@@ -57,7 +57,7 @@ Firestoreでは指定したドキュメント・ドキュメント一覧の変�
 ```dart
 // 今まで使ってた方法
 final Future<QuerySnapshot> future =
-    Firestore.instance.collection('posts').getDocuments()
+    Firestore.instance.collection('posts').get()
 
 // リアルタイム更新を使う方法
 final Stream<QuerySnapshot> stream =
@@ -69,12 +69,12 @@ final Stream<QuerySnapshot> stream =
 
 ```dart
 FutureBuilder<QuerySnapshot>(
-    future: Firestore.instance.collection('posts').getDocuments(),
+    future: Firestore.instance.collection('posts').get(),
     builder: (context, snapshot) { /* ListView作成 */ }
 )
 
 StreamBuilder<QuerySnapshot>(
-    future: Firestore.instance.collection('posts').snapshots(),
+    stream: Firestore.instance.collection('posts').snapshots(),
     builder: (context, snapshot) { /* この中は同じ */ }
 )
 ```
@@ -110,7 +110,7 @@ class ChatPage extends StatelessWidget {
             child: StreamBuilder<QuerySnapshot>(
               // 投稿メッセージ一覧を取得（非同期処理）
               // 投稿日時でソート
-              stream: Firestore.instance
+              stream: FirebaseFirestore.instance
                   .collection('posts')
                   .orderBy('date')
                   .snapshots(),

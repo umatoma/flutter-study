@@ -92,7 +92,6 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // メッセージ表示用
   String infoText = '';
-
   // 入力したメールアドレス・パスワード
   String email = '';
   String password = '';
@@ -133,9 +132,7 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 width: double.infinity,
                 // ユーザー登録ボタン
-                child: RaisedButton(
-                  color: Colors.blue,
-                  textColor: Colors.white,
+                child: ElevatedButton(
                   child: Text('ユーザー登録'),
                   onPressed: () async {
                     try {
@@ -155,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                     } catch (e) {
                       // ユーザー登録に失敗した場合
                       setState(() {
-                        infoText = "登録に失敗しました：${e.message}";
+                        infoText = "登録に失敗しました：${e.toString()}";
                       });
                     }
                   },
@@ -168,6 +165,9 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
+/* --- 省略 --- */
+
 ```
 
 
@@ -218,11 +218,11 @@ class _LoginPageState extends State<LoginPage> {
               TextFormField( /* --- 省略 --- */ ),
               Container( /* --- 省略 --- */ ),
               Container( /* --- 省略 --- */ ),
+              const SizedBox(height: 8),
               Container(
                 width: double.infinity,
                 // ログイン登録ボタン
-                child: OutlineButton(
-                  textColor: Colors.blue,
+                child: OutlinedButton(
                   child: Text('ログイン'),
                   onPressed: () async {
                     try {
@@ -242,7 +242,7 @@ class _LoginPageState extends State<LoginPage> {
                     } catch (e) {
                       // ログインに失敗した場合
                       setState(() {
-                        infoText = "ログインに失敗しました：${e.message}";
+                        infoText = "ログインに失敗しました：${e.toString()}";
                       });
                     }
                   },
@@ -289,8 +289,16 @@ class _LoginPageState extends State<LoginPage> {
 ソースコード
 
 ```dart
+// ログイン画面用Widget
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
 class _LoginPageState extends State<LoginPage> {
-   /* --- 省略 --- */ 
+
+  /* --- 省略 --- */
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -300,31 +308,25 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextFormField( /* --- 省略 --- */ ),
-              TextFormField( /* --- 省略 --- */ ),
-              Container( /* --- 省略 --- */ ),
+              /* --- 省略 --- */
               Container(
                 width: double.infinity,
                 // ユーザー登録ボタン
-                child: RaisedButton(
-                  color: Colors.blue,
-                  textColor: Colors.white,
+                child: ElevatedButton(
                   child: Text('ユーザー登録'),
                   onPressed: () async {
                     try {
                       // メール/パスワードでユーザー登録
                       final FirebaseAuth auth = FirebaseAuth.instance;
-                      final AuthResult result = await auth.createUserWithEmailAndPassword(
+                      final result = await auth.createUserWithEmailAndPassword(
                         email: email,
                         password: password,
                       );
-                      final FirebaseUser user = result.user;
                       // ユーザー登録に成功した場合
                       // チャット画面に遷移＋ログイン画面を破棄
                       await Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) {
-                          // ユーザー情報を渡す
-                          return ChatPage(user);
+                          return ChatPage(result.user!);
                         }),
                       );
                     } catch (e) {
@@ -333,27 +335,25 @@ class _LoginPageState extends State<LoginPage> {
                   },
                 ),
               ),
+              const SizedBox(height: 8),
               Container(
                 width: double.infinity,
                 // ログイン登録ボタン
-                child: OutlineButton(
-                  textColor: Colors.blue,
+                child: OutlinedButton(
                   child: Text('ログイン'),
                   onPressed: () async {
                     try {
                       // メール/パスワードでログイン
                       final FirebaseAuth auth = FirebaseAuth.instance;
-                      final AuthResult result = await auth.signInWithEmailAndPassword(
+                      final result = await auth.signInWithEmailAndPassword(
                         email: email,
                         password: password,
                       );
-                      final FirebaseUser user = result.user;
                       // ログインに成功した場合
                       // チャット画面に遷移＋ログイン画面を破棄
                       await Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) {
-                          // ユーザー情報を渡す
-                          return ChatPage(user);
+                          return ChatPage(result.user!);
                         }),
                       );
                     } catch (e) {
@@ -374,19 +374,27 @@ class _LoginPageState extends State<LoginPage> {
 class ChatPage extends StatelessWidget {
   // 引数からユーザー情報を受け取れるようにする
   ChatPage(this.user);
-
   // ユーザー情報
-  final FirebaseUser user;
-
+  final User user;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( /* --- 省略 --- */ ),
+      appBar: AppBar(/* --- 省略 --- */),
       body: Center(
         // ユーザー情報を表示
         child: Text('ログイン情報：${user.email}'),
       ),
-      floatingActionButton: FloatingActionButton( /* --- 省略 --- */ ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () async {
+          // 投稿画面に遷移
+          await Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) {
+              return AddPostPage();
+            }),
+          );
+        },
+      ),
     );
   }
 }
@@ -410,7 +418,9 @@ class ChatPage extends StatelessWidget {
 ```dart
 // チャット画面用Widget
 class ChatPage extends StatelessWidget {
+
   /* --- 省略 --- */
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -418,7 +428,7 @@ class ChatPage extends StatelessWidget {
         title: Text('チャット'),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.close),
+            icon: Icon(Icons.logout),
             onPressed: () async {
               // ログアウト処理
               // 内部で保持しているログイン情報等が初期化される
@@ -434,8 +444,16 @@ class ChatPage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center( /* --- 省略 --- */ ),
-      floatingActionButton: FloatingActionButton( /* --- 省略 --- */ ),
+      body: Center(
+        // ユーザー情報を表示
+        child: Text('ログイン情報：${user.email}'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () async {
+          /* --- 省略 --- */
+        },
+      ),
     );
   }
 }
