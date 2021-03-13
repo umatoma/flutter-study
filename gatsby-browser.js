@@ -22,7 +22,7 @@ function dartPad() {
             const iframe = document.createElement('iframe');
             iframe.setAttribute('width', '100%');
             iframe.setAttribute('height', '500px');
-            iframe.setAttribute('src', 'https://dartpad.dev/embed-flutter.html?split=60&theme=dark&run=true');
+            iframe.setAttribute('src', 'https://dartpad.dev/embed-flutter.html?null_safety=true&split=60&theme=dark&run=true');
 
             iframe.onload = () => {
                 iframe.contentWindow.postMessage(message, '*');
