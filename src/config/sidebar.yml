@@ -1,6 +1,6 @@
 # Sidebar navigation
 - label: 'Twitter'
-  link: 'https://twitter.com/flutter_study'
+  link: 'https://twitter.com/_umatoma'
 - label: 'note'
   link: 'https://note.com/_umatoma'
 - label: 'BOOTH'
@@ -109,10 +109,6 @@
   items:
     - label: 'Flutter on the web'
       link: '/master-flutter/flutter-web'
-- label: 'Widgetの使い方'
-  items:
-    - label: 'Scaffold'
-      link: /master-widgets/scaffold
 - label: 'その他'
   items:
     - label: 'ご利用にあたって'
