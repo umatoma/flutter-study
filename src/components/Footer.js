@@ -41,6 +41,11 @@ export default function Footer({ }) {
                 <div>Flutter関連書籍</div>
                 <Flex>
                     <FlexInner>
+                        <a href="https://zenn.dev/umatoma/books/1f4cb2404f3fa9" target="_blank">
+                            <img loading="lazy" src="https://storage.googleapis.com/zenn-user-upload/book_cover/7e799a2db6.jpg" width="113" height="160" />
+                        </a>
+                    </FlexInner>
+                    <FlexInner>
                         <a href="https://www.amazon.co.jp/dp/B082XQ81FH/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B082XQ81FH.09.MZZZZZZZ.jpg" />
                         </a>
@@ -67,16 +72,8 @@ export default function Footer({ }) {
                 <div><a href={twitterUrl} target="_blank">{siteAuthor}</a></div>
             </p>
             <p>
-                <div>note</div>
-                <div><a href="https://note.com/_umatoma" target="_blank">umatoma</a></div>
-            </p>
-            <p>
-                <div>BOOTH</div>
-                <div><a href="https://umatoma.booth.pm/items/2420736" target="_blank">作って学ぶ、FlutterとFirebaseを使ったアプリ開発</a></div>
-            </p>
-            <p>
-                <div>MENTA</div>
-                <div><a href="https://menta.work/plan/1947" target="_blank">学習サポート</a></div>
+                <div>Zenn</div>
+                <div><a href="https://zenn.dev/umatoma/books" target="_blank">umatoma</a></div>
             </p>
             <p className="site-title">
                 <div>{siteTitle}</div>
