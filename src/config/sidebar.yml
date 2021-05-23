@@ -65,6 +65,8 @@
       link: '/firebase-app/firestore-stream'
     - label: 'Providerで状態管理'
       link: '/firebase-app/provider'
+    - label: 'Riverpodで状態管理'
+      link: '/firebase-app/riverpod'
 - label: '7.Webアプリ公開'
   items:
     - label: 'Hosting概要'
