@@ -46,6 +46,11 @@ export default function Footer({ }) {
                         </a>
                     </FlexInner>
                     <FlexInner>
+                        <a href="https://zenn.dev/umatoma/books/e4590a04895a67" target="_blank">
+                            <img loading="lazy" src="/banner/book_recipe_banner.png" width="113" height="160" />
+                        </a>
+                    </FlexInner>
+                    <FlexInner>
                         <a href="https://www.amazon.co.jp/dp/B082XQ81FH/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B082XQ81FH.09.MZZZZZZZ.jpg" />
                         </a>
@@ -58,11 +63,6 @@ export default function Footer({ }) {
                     <FlexInner>
                         <a href="https://www.amazon.co.jp/dp/B07Q19LVW2/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07Q19LVW2.09.MZZZZZZZ.jpg" />
-                        </a>
-                    </FlexInner>
-                    <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B07LBPRHQD/ref=nosim?tag=flt0c-22" target="_blank">
-                            <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07LBPRHQD.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                 </Flex>
