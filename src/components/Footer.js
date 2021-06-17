@@ -38,8 +38,13 @@ export default function Footer({ }) {
                 <div className="gcse-searchbox-only" />
             </p>
             <p>
-                <div>Flutter関連書籍</div>
+                <div>オリジナル書籍</div>
                 <Flex>
+                    <FlexInner>
+                        <a href="https://zenn.dev/umatoma/books/bd010486772aff" target="_blank">
+                            <img loading="lazy" src="/banner/book_riverpod_banner.png" width="113" height="160" />
+                        </a>
+                    </FlexInner>
                     <FlexInner>
                         <a href="https://zenn.dev/umatoma/books/1f4cb2404f3fa9" target="_blank">
                             <img loading="lazy" src="/banner/book_banner.png" width="113" height="160" />
@@ -48,6 +53,16 @@ export default function Footer({ }) {
                     <FlexInner>
                         <a href="https://zenn.dev/umatoma/books/e4590a04895a67" target="_blank">
                             <img loading="lazy" src="/banner/book_recipe_banner.png" width="113" height="160" />
+                        </a>
+                    </FlexInner>
+                </Flex>
+            </p>
+            <p>
+                <div>Amazon</div>
+                <Flex>
+                    <FlexInner>
+                        <a href="https://www.amazon.co.jp/dp/B096TJLFNV/ref=nosim?tag=flt0c-22" target="_blank">
+                            <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B096TJLFNV.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                     <FlexInner>
