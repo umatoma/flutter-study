@@ -94,10 +94,7 @@ export default function SEO({ description, title, slug, image, children }) {
             <script type="application/ld+json">
                 {JSON.stringify(schemaOrgJSONLD)}
             </script>
-            <script
-                data-ad-client="ca-pub-1868460352893831"
-                async="true"
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+            <script data-ad-client="ca-pub-1868460352893831" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             {children}
         </Helmet>
     );
