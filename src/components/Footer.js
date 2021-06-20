@@ -61,6 +61,11 @@ export default function Footer({ }) {
                 <div>Amazon</div>
                 <Flex>
                     <FlexInner>
+                        <a href="https://www.amazon.co.jp/dp/B09754L28H/ref=nosim?tag=flt0c-22" target="_blank">
+                            <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B09754L28H.09.MZZZZZZZ.jpg" />
+                        </a>
+                    </FlexInner>
+                    <FlexInner>
                         <a href="https://www.amazon.co.jp/dp/B096TJLFNV/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B096TJLFNV.09.MZZZZZZZ.jpg" />
                         </a>
@@ -73,11 +78,6 @@ export default function Footer({ }) {
                     <FlexInner>
                         <a href="https://www.amazon.co.jp/dp/B07Z9DYYBY/ref=nosim?tag=flt0c-22" target="_blank">
                             <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07Z9DYYBY.09.MZZZZZZZ.jpg" />
-                        </a>
-                    </FlexInner>
-                    <FlexInner>
-                        <a href="https://www.amazon.co.jp/dp/B07Q19LVW2/ref=nosim?tag=flt0c-22" target="_blank">
-                            <img loading="lazy" src="https://images-na.ssl-images-amazon.com/images/P/B07Q19LVW2.09.MZZZZZZZ.jpg" />
                         </a>
                     </FlexInner>
                 </Flex>
