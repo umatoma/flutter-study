@@ -5,6 +5,8 @@
   link: 'https://zenn.dev/umatoma/books'
 - label: 'トップ'
   link: '/'
+- label: 'ご利用にあたって'
+  link: '/about'
 - label: '1.Flutterとは'
   items:
     - label: 'Flutter概要'
@@ -107,7 +109,3 @@
   items:
     - label: 'Flutter on the web'
       link: '/master-flutter/flutter-web'
-- label: 'その他'
-  items:
-    - label: 'ご利用にあたって'
-      link: '/about'

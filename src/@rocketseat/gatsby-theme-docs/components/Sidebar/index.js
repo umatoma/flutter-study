@@ -97,6 +97,18 @@ export default function Sidebar({ isMenuOpen }) {
                 </List>
             </nav>
             <footer>
+                <div style={{ paddingBottom: '1rem' }}>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3HEDU5+D73XIQ+33T0+1BOE4H" rel="nofollow">
+                        <img border="0" width="120" height="60" alt="" src="https://www24.a8.net/svt/bgt?aid=210623117798&wid=001&eno=01&mid=s00000014490008008000&mc=1" />
+                    </a>
+                    <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HEDU5+D73XIQ+33T0+1BOE4H" alt="" />
+                </div>
+                <div style={{ paddingBottom: '1rem' }}>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3HEDU4+2Q8JLE+3UES+601S1" rel="nofollow">
+                        <img border="0" width="120" height="60" alt="" src="https://www28.a8.net/svt/bgt?aid=210623116165&wid=001&eno=01&mid=s00000017938001008000&mc=1" />
+                    </a>
+                    <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3HEDU4+2Q8JLE+3UES+601S1" alt="" />
+                </div>
                 <p>{footer}</p>
             </footer>
         </Container>

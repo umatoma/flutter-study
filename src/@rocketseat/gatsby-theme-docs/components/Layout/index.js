@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-
-import TableOfContents from '@rocketseat/gatsby-theme-docs/src/components/Docs/TOC';
-import Sidebar from '@rocketseat/gatsby-theme-docs/src/components/Sidebar';
 import Header from '@rocketseat/gatsby-theme-docs/src/components/Header';
-import { Wrapper, Main, Title, Children } from '@rocketseat/gatsby-theme-docs/src/components/Layout/styles';
-
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import Footer from '../../../../components/Footer';
+import TableOfContents from '../Docs/TOC/index';
+import { Children, Main, Title, Wrapper } from './styles';
+import Sidebar from '../Sidebar'
 
 export default function Layout({
     children,
@@ -29,11 +27,10 @@ export default function Layout({
             <Wrapper isMenuOpen={isMenuOpen}>
                 {title && <Title>{title}</Title>}
                 <Main disableTOC={disableTOC}>
-                    {!disableTOC && <TableOfContents headings={headings} />}
+                    <TableOfContents headings={headings} />
                     <Children hasTitle={title}>{children}</Children>
                 </Main>
-                {/* ↓↓↓追加した部分↓↓ */}
-                <Footer/>
+                <Footer />
             </Wrapper>
         </>
     );
