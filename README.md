@@ -1,8 +1,20 @@
-![banner](https://user-images.githubusercontent.com/7200238/107840573-3a749280-6df7-11eb-9c7a-d30d35f38dbe.png)
+# flutter-study
 
-## flutter-study.dev
-- https://www.flutter-study.dev/
+## Build Setup
 
-## tools
-- Gatsby
-- Firebase
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
