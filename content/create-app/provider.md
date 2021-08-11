@@ -18,10 +18,10 @@ slug: create-app-02
 
 まずは状態管理とは何であるかについて理解していきましょう。
 
-<aa href="/widgets/about-widget">Widgetとは</aa>で紹介したように、  
+[Widgetとは](/widgets/about-widget)で紹介したように、  
 Flutterは `Widgetをツリー状に組み合わせUIを実現` しています。
 
-そして、<aa href="/widgets/state-widget">状態を持ったWidget</aa>で紹介したように、  
+そして、[状態を持ったWidget](/widgets/state-widget)で紹介したように、  
 `データを元にUIを作る` 仕組みのことを `状態を持つ` と呼びます。
 
 
@@ -57,7 +57,7 @@ Flutterは `Widgetをツリー状に組み合わせUIを実現` しています�
 
 ### Provider
 
-<aa href="/widgets/state-widget">状態を持ったWidget</aa>でも紹介したように、  
+[状態を持ったWidget](/widgets/state-widget)でも紹介したように、  
 `StatefulWidget` と `State` を使えば状態を元にUIを作ることは可能です。
 
 ですが、様々なWidgetが組み合わさったUIになり、  

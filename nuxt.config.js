@@ -57,7 +57,7 @@ export default {
 
   generate: {
     // https://composition-api.nuxtjs.org/getting-started/setup
-    interval: 100,
+    interval: 50,
 
     async routes () {
       return (await getRoutes()).map(route => route.url)

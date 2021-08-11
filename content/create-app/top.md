@@ -11,8 +11,8 @@ iOS/Android/Webアプリとして公開できるようになりましょう 💪
 
 ## こんな機能を実装したい
 
-- <aa href="/create-app/provider">Providerで状態管理</aa>
-- <aa href="/create-app/media-player">音楽・動画を再生する</aa>
+- [Providerで状態管理](/create-app/provider)
+- [音楽・動画を再生する](/create-app/media-player)
 
 ## アプリ作成例
 
@@ -24,16 +24,16 @@ API通信方法・アーキテクチャ設計など様々な知識を身に着�
 
 ### アプリ公開方法
 
-- <aa href="/create-app/publish-android">Androidアプリを公開する</aa>
+- [Androidアプリを公開する](/create-app/publish-android)
 - <a href="https://flutter.dev/docs/deployment/ios">iOSアプリを公開する</a>
-- <aa href="/host-web-app/host-web-app">Webアプリを公開する</aa>
+- [Webアプリを公開する](/host-web-app/host-web-app)
 
 自動化
-- <aa href="/create-app/codemagic">Codemagicでテスト・ビルド・配信を自動化</aa>
+- [Codemagicでテスト・ビルド・配信を自動化](/create-app/codemagic)
 
 ### Qiita App
 
-<aa href="/create-app/qiita-app">Qiita App - Qiitaクライアントアプリ</aa>
+[Qiita App - Qiitaクライアントアプリ](/create-app/qiita-app)
 
 <table>
     <tbody>

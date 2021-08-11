@@ -27,19 +27,19 @@ slug: firebase-app-02
 ❗️ 注意事項 ❗️
 
 プロジェクト・雛形の作成が終わっていない場合は  
-<aa href="/firebase-app/about-firebase-app">Firebaseを使ったアプリ概要</aa>のページを確認しましょう。
+[Firebaseを使ったアプリ概要](/firebase-app/about-firebase-app)のページを確認しましょう。
 
 
 ## ログイン機能を実装する
 
 それでは早速、ログイン機能の実装から始めてみましょう 🤩
 
-<aa href="/firebase/authentication">Authentication概要ページ</aa>でも紹介したように、  
+[Authentication概要ページ](/firebase/authentication)でも紹介したように、  
 FirebaseのAuthenticationを使ってログイン機能を実装していきます。
 
 ### Authentication初期設定
 
-<aa href="/firebase/authentication">Authentication概要ページ</aa>を参考に、  
+[Authentication概要ページ](/firebase/authentication)を参考に、  
 `Authenticationの有効化` と `Webアプリ用セットアップ` を行いましょう。
 
 
@@ -55,9 +55,9 @@ FirebaseのAuthenticationを使ってログイン機能を実装していきま�
 - ユーザー登録に成功したらチャット画面に遷移
 - ユーザー登録に失敗したらエラーメッセージを表示
 - 内容がよく分からない場合は以下のページをおさらいしてみましょう
-    - <aa href="/widgets/state-widget">状態を持ったWidget</aa>
-    - <aa href="/todo-app/add-page">Todoリスト追加画面</aa>
-    - <aa href="/firebase/authentication">Authentication概要</aa>
+    - [状態を持ったWidget](/widgets/state-widget)
+    - [Todoリスト追加画面](/todo-app/add-page)
+    - [Authentication概要](/firebase/authentication)
 
 スクリーンショット
 

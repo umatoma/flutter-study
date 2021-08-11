@@ -164,7 +164,7 @@ HostingはFirebaseの機能の１つです。
 
 ### Flutterプロジェクト作成
 
-<aa href="/getting-started/run-app">アプリ起動のページ</aa>で紹介したのと同じ様に、  
+[アプリ起動のページ](/getting-started/run-app)で紹介したのと同じ様に、  
 Flutterのプロジェクトを作成し開発できる状態にしましょう。
 
 ```bash
@@ -179,8 +179,8 @@ Hostingの機能のみを使用する場合は特に設定は必要ありませ�
 **AuthenticataionやCloud Firestoreを使う場合**は、  
 以前紹介した方法で**設定を行う必要がある**ので注意しましょう 👀
 
-- <aa href="/firebase/authentication">Authentication概要</aa>
-- <aa href="/firebase/cloud-firestore-try">Cloud Firestoreを使ってみる</aa>
+- [Authentication概要](/firebase/authentication)
+- [Cloud Firestoreを使ってみる](/firebase/cloud-firestore-try)
 
 
 ## HostingでWebアプリを公開してみる

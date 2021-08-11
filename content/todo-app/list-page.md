@@ -20,7 +20,7 @@ slug: todo-app-02
 
 ### AppBarを表示する
 
-まずは、<aa href="/widgets/app-bar">AppBarを表示</aa>し、タイトルを `リスト一覧` としてみましょう。
+まずは、`AppBarを表示`し、タイトルを `リスト一覧` としてみましょう。
 
 `lib/main.dart` の `TodoListPage` Widget を以下のように書き換えましょう。
 
@@ -63,7 +63,7 @@ class TodoListPage extends StatelessWidget {
 ### リスト一覧を表示する
 
 次は、Todoリスト一覧を表示してみましょう。  
-<aa href="/widgets/list-view-widget">スクロール可能なリストを表示</aa>したい時は `ListView` Widgetを使えばよかったですよね
+[スクロール可能なリストを表示](/widgets/list-view-widget)したい時は `ListView` Widgetを使えばよかったですよね
 
 `lib/main.dart` の `TodoListPage` Widget を以下のように書き換えましょう。
 
@@ -113,7 +113,7 @@ class TodoListPage extends StatelessWidget {
 
 せっかくなので、デザインも少し整えてみましょう ✨✨✨
 
-<aa href="/widgets/list-view-widget">リスト表示の時は `ListTile` Widget と `Card` Widget を組み合わせる</aa>ことで、  
+[リスト表示の時は `ListTile` Widget と `Card` Widget を組み合わせる](/widgets/list-view-widget)ことで、  
 簡単に整ったUIが作れましたよね
 
 `lib/main.dart` の `TodoListPage` Widget を以下のように書き換えましょう。

@@ -44,7 +44,7 @@ slug: todo-app-01
 
 ### プロジェクト作成
 
-<aa href="/getting-started/run-app/">アプリ起動のページ</aa> で説明したのと同じように、  
+[アプリ起動のページ](/getting-started/run-app/) で説明したのと同じように、  
 まずはTodoアプリ用のプロジェクトを作成しましょう。
 
 ```bash

@@ -1,16 +1,42 @@
 <template>
-  <content-container :category="category" :page="page" />
+  <content-container
+    :doc="doc"
+    :prev="prev"
+    :next="next"
+  />
 </template>
 
 <script lang="ts">
-import { defineComponent, useRoute } from '@nuxtjs/composition-api'
+import Vue from 'vue'
+import { getArticle } from '~/libs/content'
 
-export default defineComponent({
-  setup () {
-    const route = useRoute()
-    const { category, page } = route.value.params
+interface Data {
+  doc: object,
+  prev?: object,
+  next?: object,
+  title: string,
+  description: {
+    hid: string,
+    name: string,
+    content: string
+  }
+}
+interface Methods {}
+interface Computed {}
+interface Props {}
 
-    return { category, page }
+export default Vue.extend<Data, Methods, Computed, Props>({
+  async asyncData ({ $content, store, params }): Promise<Data> {
+    const { state } = store
+    const { category, page } = params
+    const article = await getArticle({ $content, state, category, page })
+    return { ...article }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [this.description]
+    }
   }
 })
 </script>

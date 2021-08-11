@@ -47,7 +47,7 @@ slug: firebase-app-01
 ### Firebaseプロジェクト作成
 
 今回はFirebaseを使ったアプリの開発になるので、  
-<aa href="/firebase/authentication">Authentication概要ページ</aa>を参考に、`Firebaseプロジェクト作成` を行いましょう。
+[Authentication概要ページ](/firebase/authentication)を参考に、`Firebaseプロジェクト作成` を行いましょう。
 
 プロジェクト名は `mychatapp` としておきましょう 👀
 
@@ -68,7 +68,7 @@ AuthenticationやFirestoreの設定が簡単なWebアプリで開発を進めて
 
 ### プロジェクト作成
 
-<aa href="/getting-started/run-app/">アプリ起動のページ</aa> で説明したのと同じように、  
+[アプリ起動のページ](/getting-started/run-app/) で説明したのと同じように、  
 まずはアプリ用のプロジェクトを作成しましょう。
 
 ```bash

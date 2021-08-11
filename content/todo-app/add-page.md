@@ -108,7 +108,7 @@ class TodoAddPage extends StatelessWidget {
 
 では、入力されたテキストを扱うにはどうすれば良いのでしょうか？
 
-こういう時は、<aa href="/widgets/state-widget">状態を持ったWidget</aa>で紹介したように、  
+こういう時は、[状態を持ったWidget](/widgets/state-widget)で紹介したように、  
 `StatefulWidget` と `State` を使うことで、入力されたテキストを元にUIが作れます。
 
 ここでは、入力されたテキストを表示するようにしてみましょう。  
@@ -298,7 +298,7 @@ class TodoListPage extends StatelessWidget {
 リスト追加画面から追加されたリストのデータを受け取ることができたので、  
 Todoリストのデータを元にリスト一覧を表示するようにしてみましょう。
 
-ここでも、<aa href="/widgets/state-widget">状態を持ったWidget</aa>で紹介したように、  
+ここでも、[状態を持ったWidget](/widgets/state-widget)で紹介したように、  
 `StatefulWidget` と `State` を使うことで、Todoリストのデータを元にUIが作れます。
 
 `lib/main.dart` の `TodoListPage` Widget を以下のように書き換えましょう。

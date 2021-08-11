@@ -282,7 +282,7 @@ class __ProgressTextState extends State<_ProgressText> {
 使い方が理解できたでしょうか？  
 この他にも様々な機能を作ってみて、Flutterで本格的なアプリが開発できるように頑張りましょう 💪
 
-- <aa href="/create-app/top">アプリを作ってみる</aa>
+- [アプリを作ってみる](/create-app/top)
 
 
 ## サンプルコード

@@ -27,7 +27,7 @@ slug: firebase-app-05
 ### ❗️ 注意事項 ❗️
 
 プロジェクト・雛形の作成が終わっていない場合は  
-<aa href="/firebase-app/about-firebase-app">Firebaseを使ったアプリ概要</aa>のページを確認しましょう。
+[Firebaseを使ったアプリ概要](/firebase-app/about-firebase-app)のページを確認しましょう。
 
 
 ## 状態管理
@@ -36,10 +36,10 @@ slug: firebase-app-05
 
 まずは状態管理とは何であるかについて理解していきましょう。
 
-<aa href="/widgets/about-widget">Widgetとは</aa>では、  
+[Widgetとは](/widgets/about-widget)では、  
 Flutterは**Widgetをツリー状に組み合わせUIを実現**することを紹介しましたね。
 
-そして、<aa href="/widgets/state-widget">状態を持ったWidget</aa>では、  
+そして、[状態を持ったWidget](/widgets/state-widget)では、  
 **データを元にUIを作る**仕組みのことを**状態を持つ**と呼ぶことを紹介しましたね。
 
 
@@ -73,7 +73,7 @@ Flutterは**Widgetをツリー状に組み合わせUIを実現**することを�
 
 ### Provider
 
-<aa href="/widgets/state-widget">状態を持ったWidget</aa>でも紹介したように、  
+[状態を持ったWidget](/widgets/state-widget)でも紹介したように、  
 `StatefulWidget` と `State` を使えば状態を元にUIを作ることは可能です。
 
 ですが、様々なWidgetが組み合わさったUIになり、  

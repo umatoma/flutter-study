@@ -28,12 +28,12 @@ slug: firebase-app-03
 ### ❗️ 注意事項 ❗️
 
 プロジェクト・雛形の作成が終わっていない場合は  
-<aa href="/firebase-app/about-firebase-app">Firebaseを使ったアプリ概要</aa>のページを確認しましょう。
+[Firebaseを使ったアプリ概要](/firebase-app/about-firebase-app)のページを確認しましょう。
 
 
 ## Firestore初期設定
 
-<aa href="/firebase/cloud-firestore">Firestore概要ページ</aa>を参考に、  
+[Firestore概要ページ](/firebase/cloud-firestore)を参考に、  
 `Firestoreの有効化` と `Webアプリ用セットアップ` を行いましょう。
 
 
@@ -44,7 +44,7 @@ slug: firebase-app-03
 Firestoreに投稿したデータを保存するようにします。  
 ここでは、`posts`コレクション内のドキュメントにデータを保存することとしましょう。
 
-<aa href="/firebase-app/authentication">Authenticationでログイン</aa>のソースコードの続きから始めます。  
+[Authenticationでログイン](/firebase-app/authentication)のソースコードの続きから始めます。  
 `lib/main.dart` の `AddPostPage` Widget と `ChatPage` Widget を以下のように書き換えましょう。
 
 ### 解説
@@ -53,8 +53,8 @@ Firestoreに投稿したデータを保存するようにします。
 - `text` `email` `date` を指定して `posts`コレクション内にドキュメント作成
 - Authentication管理画面から作成されたドキュメントが確認できる
 - Firestoreに関しておさらいしたい場合は以下のページを確認しましょう
-    - <aa href="/firebase/cloud-firestore">Firestore概要</aa>
-    - <aa href="/firebase/cloud-firestore-try">Firestoreを使ってみる</aa>
+    - [Firestore概要](/firebase/cloud-firestore)
+    - [Firestoreを使ってみる](/firebase/cloud-firestore-try)
 
 ### スクリーンショット
 

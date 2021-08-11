@@ -26,7 +26,7 @@ slug: firebase-app-04
 ### ❗️ 注意事項 ❗️
 
 プロジェクト・雛形の作成が終わっていない場合は  
-<aa href="/firebase-app/about-firebase-app">Firebaseを使ったアプリ概要</aa>のページを確認しましょう。
+[Firebaseを使ったアプリ概要](/firebase-app/about-firebase-app)のページを確認しましょう。
 
 
 ## Firestoreリアルタイム更新

@@ -19,7 +19,7 @@ slug: firebase-04
 
 ### Flutterプロジェクト作成
 
-<aa href="/getting-started/run-app">アプリ起動のページ</aa>で紹介したのと同じ様に、  
+[アプリ起動のページ](/getting-started/run-app)で紹介したのと同じ様に、  
 Flutterのプロジェクトを作成し開発できる状態にしましょう。
 
 ```bash

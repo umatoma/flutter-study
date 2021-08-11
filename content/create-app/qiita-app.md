@@ -269,7 +269,7 @@ https://www.youtube.com/watch?v=cAnFbFoGM50
 アプリは無事作成できたでしょうか？  
 この他にも様々なアプリを作ってみて、Flutterで本格的なアプリが開発できるように頑張りましょう 💪
 
-- <aa href="/create-app/top">アプリを作ってみる</aa>
+- [アプリを作ってみる](/create-app/top)
 
 
 ### ソースコード

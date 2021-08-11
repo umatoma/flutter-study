@@ -35,7 +35,7 @@ slug: top-01
 Flutterでアプリ開発を始めてみましょう 🚀
 
 <p class="link-button">
-    <aa href="/introduction/about-flutter">はじめる</aa>
+    <a href="/introduction/about-flutter">はじめる</a>
 </p>
 
 

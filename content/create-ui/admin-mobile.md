@@ -405,7 +405,7 @@ class AdminMobilePage extends StatelessWidget {
 UIは無事作成できたでしょうか？  
 この他にも様々なUIを作ってみて、Flutterで複雑なUIが表現できるように頑張りましょう 💪
 
-- <aa href="/create-ui/top">UIを作ってみる</aa>
+- [UIを作ってみる](/create-ui/top)
 
 
 ### ソースコード

@@ -101,7 +101,7 @@ AuthenticationはFirebaseの機能の１つです。
 
 ### Flutterプロジェクト作成
 
-<aa href="/getting-started/run-app">アプリ起動のページ</aa>で紹介したのと同じ様に、  
+[アプリ起動のページ](/getting-started/run-app)で紹介したのと同じ様に、  
 Flutterのプロジェクトを作成し開発できる状態にしましょう。
 
 ```bash
@@ -234,8 +234,8 @@ $ flutter pub get
     - `FirebaseAuth.createUserWithEmailAndPassword()` でユーザー登録を行う
     - ユーザー登録に成功するとユーザー情報が取得できる
 - StateやTextField周りの処理がよく分からない場合は、前のページをおさらいしよう
-    - <aa href="/widgets/state-widget">状態を持ったWidget</aa>
-    - <aa href="/todo-app/add-page">Todoリスト追加画面</aa>
+    - [状態を持ったWidget](/widgets/state-widget)
+    - [Todoリスト追加画面](/todo-app/add-page)
 
 ソースコード
 

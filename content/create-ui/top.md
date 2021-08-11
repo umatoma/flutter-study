@@ -64,7 +64,7 @@ Flutterを使って様々なUIを作れるようになりましょう。
 
 ### アニメーションの基礎を身につける
 
-- <aa href="/create-ui/animation">アニメーション基礎</aa>
+- [アニメーション基礎](/create-ui/animation)
 
 ### アニメーションを含んだ動的なUIを作ってみる
 

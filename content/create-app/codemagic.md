@@ -94,7 +94,7 @@ GitHubアカウントでログインすると、自分のリポジトリが自�
 
 ### Android署名鍵の作成方法
 
-- <aa href="/create-app/publish-android">Androidアプリを公開する</aa>
+- [Androidアプリを公開する](/create-app/publish-android)
 - [Android code signing - Codemagic Docs](https://docs.codemagic.io/code-signing/android-code-signing/)
 
 ### Google Play 配信設定ファイルの作成方法

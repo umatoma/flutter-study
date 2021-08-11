@@ -13,11 +13,11 @@ slug: host-web-app-02
 
 Firebaseを使ったアプリのページでチャットアプリを作りましたね。
 
-- <aa href="/firebase-app/about-firebase-app">Firebaseを使ったアプリ概要</aa>
-- <aa href="/firebase-app/authentication">Authenticationでログイン</aa>
-- <aa href="/firebase-app/firestore">Firestoreでデータ保存</aa>
-- <aa href="/firebase-app/firestore-stream">Firestoreでリアルタイム更新</aa>
-- <aa href="/firebase-app/provider">Providerで状態管理</aa>
+- [Firebaseを使ったアプリ概要](/firebase-app/about-firebase-app)
+- [Authenticationでログイン](/firebase-app/authentication)
+- [Firestoreでデータ保存](/firebase-app/firestore)
+- [Firestoreでリアルタイム更新](/firebase-app/firestore-stream)
+- [Providerで状態管理](/firebase-app/provider)
 
 ここでは、作成したチャットアプリを  
 HostingでWebアプリとして公開してみましょう 💪
@@ -27,7 +27,7 @@ HostingでWebアプリとして公開してみましょう 💪
 
 ### Hosting初期設定
 
-<aa href="/host-web-app/hosting">Hosting概要ページ</aa>を参考に、  
+[Hosting概要ページ](/host-web-app/hosting)を参考に、  
 `Hostingの機能を有効化`を行いましょう。
 
 ❗️注意事項❗️  

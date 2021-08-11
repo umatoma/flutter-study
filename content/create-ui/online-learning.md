@@ -47,7 +47,7 @@ slug: create-ui-07
 
 まずはじめに、トップページのUIを作ってしまいましょう。
 
-※ UI作成の内容がよく分からない場合は、<aa href="/create-ui/top">初級編に戻り</aa> UI作成を練習しましょう  
+※ UI作成の内容がよく分からない場合は、[初級編に戻り](/create-ui/top) UI作成を練習しましょう  
 
 ```dart
 import 'package:flutter/material.dart';
@@ -523,7 +523,7 @@ class _CoursesPageState extends State<CoursesPage> {
 まず、`アニメーションの動きにメリハリがある` 特徴に関しては、  
 `CurvedAnimation` を使うことで実現できます。
 
-<aa href="/create-ui/animation">アニメーション基礎</aa>で紹介したとおり、  
+[アニメーション基礎](/create-ui/animation)で紹介したとおり、  
 `AnimationControllerは指定された時間で値を変化`させてくれます。
 
 デフォルトではこの値の変化は直線的なので、  
@@ -767,7 +767,7 @@ UI・アニメーションは無事作成できたでしょうか？
 この他にも様々なUI・アニメーションを作ってみて、  
 Flutterで複雑なUI・アニメーションが表現できるように頑張りましょう 💪
 
-- <aa href="/create-ui/top">UIを作ってみる</aa>
+- [UIを作ってみる](/create-ui/top)
 
 
 ### ソースコード
