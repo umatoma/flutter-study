@@ -97,10 +97,10 @@ async function getRoutes () {
     .fetch()
   return [
     { url: '/' },
-    { url: '/about' },
+    { url: '/about/' },
     ...articles.map((article) => {
       return {
-        url: article.path,
+        url: `${article.path}/`,
         changefreq: 'weekly'
       }
     })
