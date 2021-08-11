@@ -17,7 +17,7 @@ export default {
       { hid: 'og:site_name', property: 'og:site_name', content: 'Flutterで始めるアプリ開発' },
       { hid: 'og:description', property: 'og:description', content: 'Flutterを使ったiOS/Android/Webアプリ開発への入門に必要な情報を分かりやすく紹介' },
       { hid: 'og:title', property: 'og:title', content: 'Flutterで始めるアプリ開発' },
-      { hid: 'og:image', property: 'og:image', content: 'https://www.flutter-study/images/banner.png' }
+      { hid: 'og:image', property: 'og:image', content: 'https://www.flutter-study.dev/images/banner.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
