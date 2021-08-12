@@ -4,10 +4,6 @@ export interface State {
       title: string,
       directory: string,
   }[],
-  footerLinks: {
-    title: string,
-    url: string
-  }[],
   books: {
     title: string,
     image: string,
@@ -21,61 +17,43 @@ export const state: (() => State) = () => ({
   categories: [
     {
       title: 'Flutter概要',
-      directory: 'introduction',
+      directory: 'introduction'
     },
     {
       title: 'Flutterを使ってみる',
-      directory: 'getting-started',
+      directory: 'getting-started'
     },
     {
       title: 'Widgetを使ってみる',
-      directory: 'widgets',
+      directory: 'widgets'
     },
     {
       title: 'Todoアプリを作ってみる',
-      directory: 'todo-app',
+      directory: 'todo-app'
     },
     {
       title: 'Firebaseとは',
-      directory: 'firebase',
+      directory: 'firebase'
     },
     {
       title: 'Firebaseを使ったアプリ',
-      directory: 'firebase-app',
+      directory: 'firebase-app'
     },
     {
       title: 'Webアプリ公開',
-      directory: 'host-web-app',
+      directory: 'host-web-app'
     },
     {
       title: 'UIを作ってみる',
-      directory: 'create-ui',
+      directory: 'create-ui'
     },
     {
       title: 'アプリを作ってみる',
-      directory: 'create-app',
+      directory: 'create-app'
     },
     {
       title: 'Flutter詳細',
-      directory: 'master-flutter',
-    }
-  ],
-  footerLinks: [
-    {
-      title: 'このサイトについて',
-      url: '/about'
-    },
-    {
-      title: 'Twitter',
-      url: 'https://twitter.com/_umatoma'
-    },
-    {
-      title: 'Zenn',
-      url: 'https://zenn.dev/umatoma/books'
-    },
-    {
-      title: 'web-study.dev',
-      url: 'https://web-study.dev/'
+      directory: 'master-flutter'
     }
   ],
   books: [

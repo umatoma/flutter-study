@@ -7,24 +7,40 @@
           <main>
             <Nuxt />
           </main>
-          <footer class="p-4 bg-blue-500 text-white sm:mr-64">
-            <ul class="flex flex-col items-center p-4">
-              <li v-for="link in footerLinks" :key="link.url" class="py-1">
-                <a :href="link.url">{{ link.title }}</a>
-              </li>
-            </ul>
-            <div class="flex flex-col items-center">
-              <div class="p-4">
-                <h5 class="font-bold">オリジナル書籍</h5>
-              </div>
-              <div class="flex flex-col sm:flex-row">
-                <a v-for="book in books" :key="book.title" :href="book.zenn" class="pb-4 sm:px-4">
-                  <p class="w-48 text-center text-xs truncate">{{ book.title }}</p>
-                  <img class="w-48" :src="book.image">
+          <footer class="p-8 bg-blue-500 text-white sm:mr-64">
+            <div class="flex flex-row gap-4 justify-center">
+              <a href="/about">
+                About
+              </a>
+              <a href="https://twitter.com/_umatoma">
+                Twitter
+              </a>
+              <a href="https://zenn.dev/umatoma/books">
+                Zenn
+              </a>
+            </div>
+            <div class="text-center pt-8">
+              <h5 class="font-bold">
+                関連サイト
+              </h5>
+              <div class="pt-2 text-center">
+                <a href="https://web-study.dev">
+                  <img src="/images/banner-web.png" class="inline rounded-md">
                 </a>
               </div>
             </div>
-            <p class="text-center text-xs p-4">
+            <div class="text-center pt-8">
+              <h5 class="font-bold">
+                オリジナル書籍
+              </h5>
+              <div class="pt-2 flex flex-col sm:flex-row sm:justify-center">
+                <a v-for="book in books" :key="book.title" :href="book.zenn" class="pb-4 sm:px-4">
+                  <p class="w-48 text-center text-xs truncate">{{ book.title }}</p>
+                  <img class="w-48 rounded-md" :src="book.image">
+                </a>
+              </div>
+            </div>
+            <p class="text-center text-xs pt-8">
               Copyright {{ title }}
             </p>
           </footer>
@@ -44,8 +60,7 @@ export default defineComponent({
 
     return {
       title: store.state.title,
-      footerLinks: store.state.footerLinks,
-      books: store.state.books,
+      books: store.state.books
     }
   }
 })

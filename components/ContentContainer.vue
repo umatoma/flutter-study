@@ -49,7 +49,7 @@
           </div>
           <a v-for="book in books" :key="book.title" :href="book.zenn" class="block px-4 pb-4">
             <p class="text-sm">{{ book.title }}</p>
-            <img class="w-36" :src="book.image">
+            <img class="w-36 rounded-md" :src="book.image">
           </a>
         </div>
       </div>
@@ -58,7 +58,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, useStore } from '@nuxtjs/composition-api'
+import { State } from '~/store'
 
 export default defineComponent({
   props: {
@@ -78,6 +79,11 @@ export default defineComponent({
       type: Boolean,
       default: true
     }
+  },
+  setup () {
+    const store = useStore<State>()
+    const books = store.state.books
+    return { books }
   },
   computed: {
     contents () {
