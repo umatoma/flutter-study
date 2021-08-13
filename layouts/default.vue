@@ -33,7 +33,7 @@
               <h5 class="font-bold">
                 オリジナル書籍
               </h5>
-              <div class="pt-2 flex flex-col sm:flex-row sm:justify-center">
+              <div class="pt-2 flex flex-col items-center sm:flex-row sm:justify-center">
                 <a v-for="book in books" :key="book.title" :href="book.zenn" class="pb-4 sm:px-4">
                   <p class="w-48 text-center text-xs truncate">{{ book.title }}</p>
                   <img class="w-48 rounded-md" :src="book.image">

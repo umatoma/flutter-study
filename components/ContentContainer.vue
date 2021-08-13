@@ -30,11 +30,9 @@
     <template #nav>
       <div class="flex flex-col justify-between h-screen">
         <div>
-          <div class="p-4">
-            <h5 class="font-bold">
-              目次
-            </h5>
-          </div>
+          <h5 class="font-bold p-4">
+            目次
+          </h5>
           <div v-for="content of contents" :key="content.id">
             <a :href="`#${content.id}`" class="block py-2 px-4 hover:bg-gray-200">
               <span class="text-sm">{{ content.text }}</span>
@@ -42,14 +40,19 @@
           </div>
         </div>
         <div>
-          <div class="p-4">
-            <h5 class="font-bold">
-              オリジナル書籍
-            </h5>
+          <h5 class="font-bold p-4">
+            オリジナル書籍
+          </h5>
+          <div class="flex flex-row gap-4 px-4">
+            <a v-for="book in books" :key="book.title" :href="book.zenn">
+              <img class="rounded" :src="book.image">
+            </a>
           </div>
-          <a v-for="book in books" :key="book.title" :href="book.zenn" class="block px-4 pb-4">
-            <p class="text-sm">{{ book.title }}</p>
-            <img class="w-36 rounded-md" :src="book.image">
+          <h5 class="font-bold p-4">
+            関連サイト
+          </h5>
+          <a href="https://web-study.dev" class="block px-4 pb-4">
+            <img class="w-full" src="/images/banner-web.png">
           </a>
         </div>
       </div>
