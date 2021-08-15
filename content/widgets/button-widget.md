@@ -113,9 +113,9 @@ ElevatedButton(
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/material/TextButton-class.html
-- https://api.flutter.dev/flutter/material/OutlinedButton-class.html
-- https://api.flutter.dev/flutter/material/ElevatedButton-class.html
+- [TextButton](https://api.flutter.dev/flutter/material/TextButton-class.html)
+- [OutlinedButton](https://api.flutter.dev/flutter/material/OutlinedButton-class.html)
+- [ElevatedButton](https://api.flutter.dev/flutter/material/ElevatedButton-class.html)
 
 
 ## IconButton
@@ -175,7 +175,7 @@ ElevatedButton.icon(
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/material/IconButton-class.html
+- [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
 
 ## FloatingActionButton
@@ -185,7 +185,7 @@ ElevatedButton.icon(
 マテリアルデザインを採用したアプリで表示されるFloatingActionButtonを表示する時は、  
 `FloatingActionButton` を使えばOKです 👍
 
-`Scaffold` の `floatingActionButton` に指定することで手軽に表示することができます。
+`Scaffold` の `floatingActionButton` に指定することで手軽に表示できます。
 
 ```dart
 Scaffold(
@@ -225,8 +225,8 @@ Scaffold(
 
 ## 参考情報
 
-- https://api.flutter.dev/flutter/material/TextButton-class.html
-- https://api.flutter.dev/flutter/material/OutlinedButton-class.html
-- https://api.flutter.dev/flutter/material/ElevatedButton-class.html
-- https://api.flutter.dev/flutter/material/IconButton-class.html
-- https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
+- [TextButton](https://api.flutter.dev/flutter/material/TextButton-class.html)
+- [OutlinedButton](https://api.flutter.dev/flutter/material/OutlinedButton-class.html)
+- [ElevatedButton](https://api.flutter.dev/flutter/material/ElevatedButton-class.html)
+- [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
+- [FloatingActionButton](https://api.flutter.dev/flutter/material/FloatingActionButton-class.html)
