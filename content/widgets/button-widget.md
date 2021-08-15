@@ -210,7 +210,7 @@ Scaffold(
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
+- [FloatingActionButton](https://api.flutter.dev/flutter/material/FloatingActionButton-class.html)
 
 
 ## まとめ
