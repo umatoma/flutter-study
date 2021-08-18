@@ -25,7 +25,7 @@
               </h5>
               <div class="pt-2 text-center">
                 <a href="https://web-study.dev">
-                  <img src="/images/banner-web.png" class="inline rounded-md">
+                  <img src="/images/banner-web.png" class="inline-block h-32 rounded-md">
                 </a>
               </div>
             </div>
