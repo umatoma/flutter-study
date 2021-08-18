@@ -139,6 +139,11 @@ export default defineComponent({
     padding-left: 1rem;
     padding-bottom: 0.5rem;
   }
+  .nuxt-content ul li a, .nuxt-content ol li a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
   .nuxt-content a {
     text-decoration: underline;
   }
