@@ -171,20 +171,22 @@ FlutterでビルドしたWebアプリのDOM（抜粋）
                 <flt-clip
                     flt-layer-state="retained"
                     clip-type="physical-shape"
-                    style="position: absolute; overflow: hidden; background-color: rgb(250, 250, 250); box-shadow: none; left: 0px; top: 0px; width: 552px; height: 815px; border-radius: 0px;">
+                    style="position: absolute; overflow: hidden;  ...">
                     <flt-clip-interior style="position: absolute; left: 0px; top: 0px;">
-                        <flt-picture flt-layer-state="retained" style="position: absolute; transform: translate(0px, 0px);">
+                        <flt-picture
+                          flt-layer-state="retained"
+                          style="position: absolute; transform: translate(0px, 0px);">
 
                             <!-- HTML&CSSのみで描画できる場合 → HTML&CSSを使う （DomCanvas） -->
-                            <flt-dom-canvas style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;">
+                            <flt-dom-canvas style="position: absolute; top: 0px; ...">
                                 <!-- Scaffold.body -->
-                                <p style="font-size: 14px; font-weight: normal; font-family: Roboto, Arial, sans-serif; color: rgba(0, 0, 0, 0.867); position: absolute; white-space: pre-wrap; overflow-wrap: break-word; overflow: hidden; height: 16px; width: 72px; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 240, 427.5);">Hello World</p>
+                                <p style="font-size: 14px; font-weight: normal; ...">Hello World</p>
                             </flt-dom-canvas>
                         </flt-picture>
                         <flt-clip
                             flt-layer-state="retained"
                             clip-type="physical-shape"
-                            style="position: absolute; overflow: hidden; background-color: rgb(33, 150, 243); box-shadow: rgba(0, 0, 0, 0.4) 1.33333px 2.66667px 5.52px 0px; left: 0px; top: 0px; width: 552px; height: 56px; border-radius: 0px;">
+                            style="position: absolute; overflow: hidden; ...">
                             <flt-clip-interior style="position: absolute; left: 0px; top: 0px;">
                                 <flt-picture
                                     flt-layer-state="retained"
@@ -196,14 +198,16 @@ FlutterでビルドしたWebアプリのDOM（抜粋）
                                         <canvas
                                             width="44"
                                             height="54"
-                                            style="position: absolute; width: 44px; height: 54px; z-index: -1;"></canvas>
+                                            style="position: absolute; width: 44px; height: 54px; z-index: -1;">
+                                        </canvas>
                                     </flt-canvas>
                                 </flt-picture>
                             </flt-clip-interior>
                         </flt-clip>
                         <flt-picture
                             flt-layer-state="retained"
-                            style="position: absolute; transform: translate(0px, 0px);"></flt-picture>
+                            style="position: absolute; transform: translate(0px, 0px);">
+                        </flt-picture>
                     </flt-clip-interior>
                 </flt-clip>
             </flt-offset>

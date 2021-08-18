@@ -41,7 +41,7 @@
               </div>
             </div>
             <p class="text-center text-xs pt-8">
-              Copyright {{ title }}
+              Copyright Flutterで始めるアプリ開発
             </p>
           </footer>
         </div>
@@ -57,9 +57,7 @@ import { State } from '~/store'
 export default defineComponent({
   setup () {
     const store = useStore<State>()
-
     return {
-      title: store.state.title,
       books: store.state.books
     }
   }

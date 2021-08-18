@@ -11,19 +11,19 @@
         </div>
       </div>
       <div class="sm:block" :class="isMenuOpen ? '' : 'hidden'">
-        <div v-for="category in categories" :key="category.title">
+        <div v-for="(category, cindex) in categories" :key="category.title">
           <h5 class="p-2 text-blue-900 cursor-pointer hover:bg-gray-200" @click="toggleCategoryOpen(category)">
-            {{ category.title }}
+            {{ (cindex + 1) }}. {{ category.title }}
           </h5>
           <a
-            v-for="(doc, index) in category.docs"
+            v-for="(doc, dindex) in category.docs"
             :key="doc.path"
             :href="doc.path"
             class="block py-2 px-4 hover:bg-gray-200"
             :class="category.isOpen ? '' : 'hidden'"
           >
             <span class="text-sm">
-              {{ (index + 1).toString().padStart(2, '0') }}. {{ doc.title }}
+              {{ (cindex + 1) }}-{{ (dindex + 1) }}. {{ doc.title }}
             </span>
           </a>
         </div>
@@ -34,8 +34,7 @@
 
 <script lang="ts">
 import { IContentDocument } from '@nuxt/content/types/content'
-import { defineComponent, ref, useContext, useFetch, useStore } from '@nuxtjs/composition-api'
-import { State } from '~/store'
+import { defineComponent, ref, useContext, useFetch } from '@nuxtjs/composition-api'
 
 interface ContentCategory {
   title: string,
@@ -45,7 +44,6 @@ interface ContentCategory {
 
 export default defineComponent({
   setup () {
-    const store = useStore<State>()
     const { $content, params } = useContext()
     const fetchDocs = async (slug: string) => {
       return (await $content(slug).without(['body']).sortBy('slug').fetch()) as IContentDocument[]
@@ -55,7 +53,52 @@ export default defineComponent({
     const categories = ref<ContentCategory[]>([])
     useFetch(async () => {
       categories.value = await Promise.all(
-        store.state.categories.map(async (category) => {
+        [
+          {
+            title: 'Flutter概要',
+            directory: 'introduction'
+          },
+          {
+            title: '初めてのFlutter',
+            directory: 'getting-started'
+          },
+          {
+            title: 'WidgetでUIを作る',
+            directory: 'widgets'
+          },
+          {
+            title: 'Todoアプリを作る',
+            directory: 'todo-app'
+          },
+          {
+            title: '初めてのFirebase',
+            directory: 'firebase'
+          },
+          {
+            title: 'Firebaseを使ったアプリ',
+            directory: 'firebase-app'
+          },
+          {
+            title: 'Webアプリを公開する',
+            directory: 'host-web-app'
+          },
+          {
+            title: '様々なUIを作る',
+            directory: 'create-ui'
+          },
+          {
+            title: '様々なアプリを作る',
+            directory: 'create-app'
+          },
+          {
+            title: 'レシピ集',
+            directory: 'recipe'
+          },
+          {
+            title: 'Flutter応用知識',
+            directory: 'master-flutter'
+          }
+        ].map(async (category) => {
           return {
             title: category.title,
             docs: await fetchDocs(category.directory),

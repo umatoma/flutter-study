@@ -7,7 +7,7 @@ export async function getArticle (params: {
   category: string,
   page: string
 }) {
-  const { $content, state, category, page } = params
+  const { $content, category, page } = params
   const doc = (await $content(`${category}/${page}`).fetch()) as IContentDocument
   const docs = (await $content(category).sortBy('slug').surround(doc.slug).fetch()) as IContentDocument[]
   const prev = docs[0]
@@ -15,7 +15,9 @@ export async function getArticle (params: {
     ? (await $content(doc.next).fetch()) as IContentDocument
     : docs[1]
 
-  const title = (category === 'top' && page === 'index') ? doc.title : `${doc.title} | ${state.title}`
+  const title = (category === 'top' && page === 'index')
+    ? doc.title
+    : `${doc.title} | Flutterで始めるアプリ開発`
   const description = {
     hid: 'description',
     name: 'description',

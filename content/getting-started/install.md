@@ -1,5 +1,5 @@
 ---
-title: 'インストール'
+title: 'Flutterをインストールする'
 description: 'Flutterのインストール方法を紹介'
 slug: getting-started-01
 ---
