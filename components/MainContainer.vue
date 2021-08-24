@@ -1,22 +1,20 @@
 <template>
-  <div>
-    <div class="flex flex-col sm:flex-row">
-      <div class="hidden sm:block sm:flex-none sm:w-64 sm:order-last sm:border-l sm:border-gray-200">
-        <div class="sm:fixed sm:w-64 sm:h-screen">
-          <slot name="nav" />
-        </div>
+  <div class="flex flex-row">
+    <div class="hidden flex-none w-64 order-last border-l sm:block">
+      <div class="sticky top-0 right-0">
+        <slot name="nav" />
       </div>
-      <article class="flex-grow">
-        <div class="px-8 py-16 bg-blue-500">
-          <h1 class="text-3xl text-white font-bold">
-            {{ title }}
-          </h1>
-        </div>
-        <div class="px-4 pt-4 pb-8">
-          <slot name="main" />
-        </div>
-      </article>
     </div>
+    <article class="w-screen sm:w-full">
+      <div class="px-8 py-16 bg-blue-500">
+        <h1 class="text-3xl text-white font-bold">
+          {{ title }}
+        </h1>
+      </div>
+      <div class="px-4 pt-4 pb-8">
+        <slot name="main" />
+      </div>
+    </article>
   </div>
 </template>
 

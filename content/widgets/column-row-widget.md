@@ -144,8 +144,8 @@ Row(
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/widgets/Column-class.html
-- https://api.flutter.dev/flutter/widgets/Row-class.html
+- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 
 
 ## まとめ
@@ -158,5 +158,5 @@ Row(
 
 ## 参考情報
 
-- https://api.flutter.dev/flutter/widgets/Column-class.html
-- https://api.flutter.dev/flutter/widgets/Row-class.html
+- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)

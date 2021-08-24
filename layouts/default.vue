@@ -1,65 +1,17 @@
 <template>
   <div class="text-gray-700">
-    <div class="container mx-auto">
-      <div class="flex flex-col sm:flex-row">
-        <side-nav class="flex-none" />
-        <div class="flex-grow">
-          <main>
-            <Nuxt />
-          </main>
-          <footer class="p-8 bg-blue-500 text-white sm:mr-64">
-            <div class="flex flex-row gap-4 justify-center">
-              <a href="/about">
-                About
-              </a>
-              <a href="https://twitter.com/_umatoma">
-                Twitter
-              </a>
-              <a href="https://zenn.dev/umatoma/books">
-                Zenn
-              </a>
-            </div>
-            <div class="text-center pt-8">
-              <h5 class="font-bold">
-                関連サイト
-              </h5>
-              <div class="pt-2 text-center">
-                <a href="https://web-study.dev">
-                  <img src="/images/banner-web.png" class="inline-block h-32 rounded-md">
-                </a>
-              </div>
-            </div>
-            <div class="text-center pt-8">
-              <h5 class="font-bold">
-                オリジナル書籍
-              </h5>
-              <div class="pt-2 flex flex-col items-center sm:flex-row sm:justify-center">
-                <a v-for="book in books" :key="book.title" :href="book.zenn" class="pb-4 sm:px-4">
-                  <p class="w-48 text-center text-xs truncate">{{ book.title }}</p>
-                  <img class="w-48 rounded-md" :src="book.image">
-                </a>
-              </div>
-            </div>
-            <p class="text-center text-xs pt-8">
-              Copyright Flutterで始めるアプリ開発
-            </p>
-          </footer>
+    <div class="flex flex-col sm:flex-row sm:container sm:mx-auto">
+      <aside class="sm:flex-none sm:w-64">
+        <div class="sm:h-screen overflow-y-scroll sticky top-0 left-0 sm:border-r sm:border-gray-200">
+          <side-nav />
         </div>
+      </aside>
+      <div class="flex-1">
+        <main class="min-h-screen">
+          <Nuxt />
+        </main>
       </div>
     </div>
+    <site-footer />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent, useStore } from '@nuxtjs/composition-api'
-import { State } from '~/store'
-
-export default defineComponent({
-  setup () {
-    const store = useStore<State>()
-    return {
-      books: store.state.books
-    }
-  }
-})
-</script>

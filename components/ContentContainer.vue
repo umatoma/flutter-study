@@ -3,8 +3,8 @@
     <template #main>
       <nuxt-content :document="doc" />
       <template v-if="showSurround && (prev || next)">
-        <div class="flex flex-col sm:flex-row justify-between pt-8">
-          <div class="mb-4 sm:w-1/3 sm:mb-0">
+        <div class="flex flex-col sm:flex-row justify-between gap-8 pt-8">
+          <div class="flex-1">
             <a v-if="prev" :href="prev.path" class="block w-full border border-gray-200 hover:bg-gray-200">
               <div class="flex flex-row items-center">
                 <div class="flex-none p-2">
@@ -14,7 +14,7 @@
               </div>
             </a>
           </div>
-          <div class="sm:w-1/3">
+          <div class="flex-1">
             <a v-if="next" :href="next.path" class="block w-full border border-gray-200 hover:bg-gray-200">
               <div class="flex flex-row items-center">
                 <p class="flex-grow p-2 text-center">{{ next.title }}</p>
@@ -28,28 +28,35 @@
       </template>
     </template>
     <template #nav>
-      <div class="h-screen p-4">
-        <h5 class="font-bold text-center">
+      <div>
+        <h5 class="font-bold text-center pt-4">
           オリジナル書籍
         </h5>
-        <div class="flex flex-col gap-4 pt-2">
-          <a
-            v-for="book in books"
-            :key="book.title"
-            :href="book.zenn"
-            class="mx-4"
-          >
-            <img class="rounded border hover:border-blue-200" :src="book.image">
+        <div class="grid grid-cols-2 gap-2 px-4 pt-2">
+          <a href="https://zenn.dev/umatoma/books/bd010486772aff" target="_blank" class="text-center text-sm">
+            <span>Zenn版</span>
+            <img src="/images/banner/book_riverpod_banner.png" class="rounded border hover:border-blue-200">
+          </a>
+          <a href="https://www.amazon.co.jp/dp/B09D9Q4R2F/ref=nosim?tag=flt0c-22" target="_blank" class="text-center text-sm">
+            <span>Amazon版</span>
+            <img src="/images/banner/book_riverpod_banner.png" class="rounded border hover:border-blue-200">
+          </a>
+          <a href="https://zenn.dev/umatoma/books/1f4cb2404f3fa9" target="_blank" class="text-center text-sm">
+            <span>Zenn版</span>
+            <img src="/images/banner/book_banner.png" class="rounded border hover:border-blue-200">
+          </a>
+          <a href="https://www.amazon.co.jp/dp/B096T3YMZ3/ref=nosim?tag=flt0c-22" target="_blank" class="text-center text-sm">
+            <span>Amazon版</span>
+            <img src="/images/banner/book_banner.png" class="rounded border hover:border-blue-200">
           </a>
         </div>
+      </div>
+      <div>
         <h5 class="font-bold text-center pt-4">
           関連サイト
         </h5>
         <div class="pt-2">
-          <a
-            href="https://web-study.dev"
-            class="block pb-4 mx-4"
-          >
+          <a href="https://web-study.dev" class="block pb-4 mx-4">
             <img class="rounded border hover:border-blue-200" src="/images/banner-web.png">
           </a>
         </div>

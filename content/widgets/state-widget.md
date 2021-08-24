@@ -88,7 +88,7 @@ class _MyWidgetState extends State<MyWidget> {
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://flutter.dev/docs/development/ui/interactive
+- [interactive](https://flutter.dev/docs/development/ui/interactive)
 
 
 ## まとめ
@@ -101,4 +101,4 @@ class _MyWidgetState extends State<MyWidget> {
 
 ## 参考情報
 
-- https://flutter.dev/docs/development/ui/interactive
+- [interactive](https://flutter.dev/docs/development/ui/interactive)

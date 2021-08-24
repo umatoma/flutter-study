@@ -11,7 +11,7 @@ slug: widgets-02
 
 ## Text Widget
 
-`Text` Widgetを使うことで、テキストを表示することができます。  
+`Text` Widgetを使うことで、テキストを表示できます。  
 それでは、具体的な使い方を見ていきましょう。
 
 ### テキスト表示
@@ -37,7 +37,7 @@ Text('Red', style: TextStyle(color: Colors.red))
 
 ### 表示位置
 
-テキストの右寄せや左寄せなど `textAlign` で表示位置を指定することもできます 👍
+テキストの右寄せや左寄せなど `textAlign` で表示位置を指定できます 👍
 ```dart
 // 表示位置を指定
 Text('TextAlign.right', textAlign: TextAlign.right)
@@ -56,7 +56,7 @@ Text('TextAlign.right', textAlign: TextAlign.right)
 
 この他にも、色々と機能はあるので気になるときは公式ドキュメントを見てみましょう 👀
 
-- https://api.flutter.dev/flutter/widgets/Text-class.html
+- [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
 
 
 ## まとめ
@@ -68,4 +68,4 @@ Text('TextAlign.right', textAlign: TextAlign.right)
 
 ## 参考情報
 
-- https://api.flutter.dev/flutter/widgets/Text-class.html
+- [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
